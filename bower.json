@@ -1,0 +1,21 @@
+{
+  "name": "duy",
+  "homepage": "https://github.com/HoangManhDuy/Java",
+  "authors": [
+    "DuyNM <hoangduyib96@gmail.com>"
+  ],
+  "description": "mo ta",
+  "main": "main",
+  "keywords": [
+    "123456"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
