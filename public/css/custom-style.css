@@ -1,0 +1,17 @@
+.header {
+    position: relative;
+    padding: 1em 0 0em 0;
+    background: url(../images/header.jpg);
+}
+
+ul.nav.navbar-nav.navbar-right.fix-navbar-right {
+    margin-left: 0 !important;
+}
+
+.fix-btn {
+    margin-top: 25px;
+}
+
+.fix-nav-header {
+    margin-left: 3%;
+}
