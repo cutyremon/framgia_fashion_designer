@@ -11,10 +11,18 @@
 |
 */
 
-Route::get('Duy/hoang', function () {
-    return view('welcome');
+Route::get('/', function () {
+    return view('frontend.home.homepage');
 });
 
-// Route::get('Dai/du', function(){
-// 	echo 'toi làduy';
-// });
+Route::get('stylist', function() {
+	return view('frontend.stylist.stylistpage');
+});
+
+Route::get('style', function() {
+	return view('frontend.style.stylepage');
+});
+
+Route::get('profile', function() {
+	return view('frontend.user.profile');
+});
