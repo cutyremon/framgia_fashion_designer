@@ -14,15 +14,20 @@
 Route::get('/', function () {
     return view('frontend.home.homepage');
 });
+Route::get('/login',function(){
+    return view('frontend.login.login');
+});
 
-Route::get('stylist', function() {
+
+Route::get('/stylist', function() {
 	return view('frontend.stylist.stylistpage');
 });
 
-Route::get('style', function() {
+Route::get('/style', function() {
 	return view('frontend.style.stylepage');
 });
 
-Route::get('profile', function() {
+Route::get('/profile', function() {
 	return view('frontend.user.profile');
 });
+
