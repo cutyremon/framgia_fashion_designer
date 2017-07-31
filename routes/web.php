@@ -24,5 +24,9 @@ Route::get('style', function() {
 });
 
 Route::get('profile', function() {
-	return view('frontend.user.profile');
+	return view('frontend.profile.user_profile');
+});
+
+Route::get('admin', function() {
+    return view('frontend.admin.admin');
 });

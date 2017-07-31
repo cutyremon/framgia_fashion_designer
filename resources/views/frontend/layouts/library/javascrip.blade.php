@@ -1,4 +1,4 @@
-{{ Html::script('bower_components/jquery/dist/jquery.min.js', ['type' => 'text/javascript')] }}
+{{ Html::script('bower_components/jquery/dist/jquery.min.js', ['type' => 'text/javascript']) }}
 {{ Html::script('bower_components/ResponsiveSlides/responsiveslides.min.js') }}
 <script type="application/x-javascript"> addEventListener("load", function () {
         setTimeout(hideURLbar, 0);
@@ -38,8 +38,8 @@
 <!-- //PopUp-Box-JavaScript -->
 <!-- //js -->
 <!-- start-smoth-scrolling -->
-{{ Html::script('bower_components/ui-to-top/js/jquery.ui.totop.js', ['type' => 'text/javascript')] }}
-{{ Html::script('bower_components/jquery-easing/jquery.easing.js', ['type' => 'text/javascript')] }}
+{{ Html::script('bower_components/ui-to-top/js/jquery.ui.totop.js', ['type' => 'text/javascript']) }}
+{{ Html::script('bower_components/jquery-easing/jquery.easing.js', ['type' => 'text/javascript']) }}
 <script type="text/javascript">
     jQuery(document).ready(function ($) {
         $(".scroll").click(function (event) {
@@ -95,9 +95,9 @@
         });
     });
 </script>
-{{ Html::script('bower_components/bootstrap/dist/js/bootstrap.min.js', ['type' => 'text/javascript')] }}
+{{ Html::script('bower_components/bootstrap/dist/js/bootstrap.min.js', ['type' => 'text/javascript']) }}
 <!--pop-up-box -->
-{{ Html::script('bower_components/magnific-popup/dist/jquery.magnific-popup.js', ['type' => 'text/javascript')] }}
+{{ Html::script('bower_components/magnific-popup/dist/jquery.magnific-popup.js', ['type' => 'text/javascript']) }}
 <script>
     $(document).ready(function () {
         $('.popup-with-zoom-anim').magnificPopup({

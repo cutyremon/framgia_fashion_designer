@@ -13,17 +13,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content="Haute Couture Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
     Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design"/>
-    {{ Html::style('bower_components/bootstrap/dist/css/bootstrap.css', ['rel' => 'stylesheet', 'type' => 'text/css')] }}
-    {{ Html::style('bower_components/font-awesome/css/font-awesome.min.css', ['rel' => 'stylesheet', 'type' => 'text/css')] }}
+    {{ Html::style('bower_components/bootstrap/dist/css/bootstrap.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
+    {{ Html::style('bower_components/font-awesome/css/font-awesome.min.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
     <link href="//fonts.googleapis.com/css?family=Sansita+One" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    {{ Html::style('css/jquery.flipster.css', [rel' => 'stylesheet')] }}
-    {{ Html::style('css/style.css', ['rel' => 'stylesheet','type' => 'text/css')] }}
-    {{ Html::style('css/galleryeffect.css', ['rel' => 'stylesheet', 'type' => 'text/css')] }}
-    {{ Html::style('css/popuo-box.css', ['rel' => 'stylesheet', 'type' => 'text/css')] }}
-    {{ Html::style('css/chocolat.css', ['rel' => 'stylesheet', 'type' => 'text/css')] }}
-    {{ Html::style('css/owl.carousel.css', ['rel' => 'stylesheet', 'type' =>'text/css')] }}
+    {{ Html::style('css/jquery.flipster.css', ['rel' => 'stylesheet']) }}
+    {{ Html::style('css/style.css', ['rel' => 'stylesheet','type' => 'text/css']) }}
+    {{ Html::style('css/galleryeffect.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
+    {{ Html::style('css/popuo-box.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
+    {{ Html::style('css/chocolat.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
+    {{ Html::style('css/owl.carousel.css', ['rel' => 'stylesheet', 'type' =>'text/css']) }}
     
     @yield('custom-css')
 </head>

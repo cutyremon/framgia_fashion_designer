@@ -15,3 +15,54 @@ ul.nav.navbar-nav.navbar-right.fix-navbar-right {
 .fix-nav-header {
     margin-left: 3%;
 }
+
+/* Profile*/
+.container {
+    background-color: honeydew;
+}
+.profile-head {
+    margin-top: 5px;
+    padding: 0;
+    background-color: #af9a5f;
+}
+
+.profile-head img {
+    height: 250px;
+    width: 250px;
+    border: 0;
+    margin-top: 10px;
+}
+
+.nav-menu li a {
+    margin: 5px 0px 0px 0px;
+}
+
+.img-icon .edit-icon {
+    display: none;
+    width: 250px !important;
+    line-height: 40px;
+    margin: 0 auto;
+    padding: 0;
+}
+.img-icon:hover a.edit-icon {
+    display: block;
+    margin-top: -40px;
+    z-index: 9999;
+}
+
+.profile-content {
+    margin-top: 5px;
+}
+
+.block {
+    margin-top: 10px;
+    border: 1px solid #5bc0de;
+    padding: 5px 20px 5px;
+}
+/*edit-form profile*/
+.form-edit {
+    width: 50% !important;
+    margin: 25px auto;
+}
+
+/* Clode profile */
