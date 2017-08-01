@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -38,7 +38,7 @@ class Category extends Model
     function produce() {
         return $this->hasMany(Produce::class);
     }
-    
+
     function requested_produce() {
         return $this->hasMany(Requeste_Produce::class);
     }
