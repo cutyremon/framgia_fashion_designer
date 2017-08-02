@@ -59,15 +59,11 @@ label {
     margin: 0;
 }
 
-
 /*--header--*/
-
 
 /*-- banner --*/
 
 .banner {
-    background: url(../images/banner.jpg)no-repeat 0px 0px;
-    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -112,7 +108,6 @@ label {
     padding: 1em 0 0em 0;
 }
 
-
 /*-- logo --*/
 
 .navbar-header h1 {
@@ -133,12 +128,9 @@ h1 span {
     color: #ff3466
 }
 
-
 /*-- //logo --*/
 
-
 /*-- top-nav --*/
-
 
 /* Underline From Center */
 
@@ -186,14 +178,14 @@ h1 span {
     min-height: inherit;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
     color: #99abd5;
-    background: none!important;
+    background: none !important;
 }
 
-.navbar-nav>li {
+.navbar-nav > li {
     margin: 0 7px;
 }
 
@@ -201,7 +193,7 @@ ul.nav.navbar-nav.navbar-right {
     margin-left: 10%;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
     color: #bfb992;
     font-size: 1em;
     padding: 1em 1em;
@@ -211,28 +203,25 @@ ul.nav.navbar-nav.navbar-right {
     text-transform: uppercase;
 }
 
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav li a.active {
     color: #ff3466;
-    background: none!important;
+    background: none !important;
 }
 
 .navbar-right {
-    float: left!important;
-    margin-right: 0px!important;
+    float: left !important;
+    margin-right: 0px !important;
 }
 
 .navbar-collapse {
-    padding: 0!important;
+    padding: 0 !important;
 }
-
 
 /*--//header--*/
 
-
 /*--banner--*/
-
 
 /*-- Slider --*/
 
@@ -559,9 +548,7 @@ ul.nav.navbar-nav.navbar-right {
     margin: 109px auto;
 }
 
-
 /*-- //Slider --*/
-
 
 /*-- /about--*/
 
@@ -600,7 +587,6 @@ footer,
     width: 100%;
     height: 320px;
 }
-
 
 /*-- about-grids --*/
 
@@ -728,17 +714,14 @@ p.text {
     text-decoration: none;
 }
 
-
 /*-- //about-grids --*/
 
-
 /*-- //about--*/
-
 
 /*--team-section--*/
 
 .team {
-    background: url(../images/contact.jpg)no-repeat 0px 0px;
+    background: url(../images/contact.jpg) no-repeat 0px 0px;
     background-size: cover;
 }
 
@@ -860,7 +843,7 @@ p.text {
 }
 
 .ih-item.circle.effect3 .info {
-    background: #333333!important;
+    background: #333333 !important;
     opacity: 0;
     pointer-events: none;
     -webkit-transition: all 0.35s ease-in-out;
@@ -931,9 +914,7 @@ ul.social.team-w3l li {
     margin-top: 20px;
 }
 
-
 /*--//team-section--*/
-
 
 /*-- gallery --*/
 
@@ -1027,7 +1008,6 @@ ul.social.team-w3l li {
     vertical-align: middle;
 }
 
-
 /* =============== HOVER AREA =============== */
 
 .nd-wrap:hover .nd-icon,
@@ -1045,8 +1025,6 @@ ul.social.team-w3l li {
 .nd-wrap:hover .nd-content {
     background: rgba(0, 0, 0, 0.5);
 }
-
-
 
 /* =============== STYLE 8 =============== */
 
@@ -1071,9 +1049,7 @@ ul.social.team-w3l li {
     margin: 2em 0;
 }
 
-
 /*--//gallery--*/
-
 
 /*-- news --*/
 
@@ -1114,7 +1090,7 @@ ul.social.team-w3l li {
 }
 
 .news-agileits-left {
-    background: url("../images/fashion1.jpg")no-repeat 0px 0px;
+    background: url("../images/fashion1.jpg") no-repeat 0px 0px;
     background-size: cover;
     margin-left: 130px;
     padding: 0;
@@ -1123,8 +1099,8 @@ ul.social.team-w3l li {
 }
 
 .video2 {
-    margin-left: 0!important;
-    background: url(../images/fashion2.jpg)no-repeat 0px 0px;
+    margin-left: 0 !important;
+    background: url(../images/fashion2.jpg) no-repeat 0px 0px;
     background-size: cover;
 }
 
@@ -1162,9 +1138,7 @@ ul.social.team-w3l li {
     font-size: 35px;
 }
 
-
 /*--// news --*/
-
 
 /*-- Contact --*/
 
@@ -1283,9 +1257,7 @@ a.mail:hover {
     -ms-transition: 0.5s all;
 }
 
-
 /*-- //Contact --*/
-
 
 /*-- Footer --*/
 
@@ -1437,9 +1409,7 @@ ul.social li a i {
     background: #bd081c;
 }
 
-
 /*-- Footer-Social-Icons --*/
-
 
 /*-- Copyright --*/
 
@@ -1465,12 +1435,9 @@ ul.social li a i {
     color: #fff;
 }
 
-
 /*-- //Copyright --*/
 
-
 /*-- //Footer --*/
-
 
 /*-- to-top --*/
 
@@ -1501,72 +1468,85 @@ ul.social li a i {
     filter: alpha(opacity=0);
 }
 
-
 /*-- //to-top --*/
-
 
 /*--responsive--*/
 
-@media(max-width:1680px) {
+@media (max-width: 1680px) {
     .navbar-header h1 {
         margin-left: 20px;
     }
+
     ul.nav.navbar-nav.navbar-right {
         margin-left: 9%;
     }
 }
 
-@media(max-width:1440px) {
+@media (max-width: 1440px) {
     .news-agileits-left {
         margin-left: 118px;
     }
+
     .news-agileits-right p {
         line-height: 40px;
         margin: 25px 0px 30px;
     }
+
     .news-agileits-right {
         padding: 47.5px 55px;
     }
+
     .banner {
         min-height: 665px;
     }
+
     .banner-text {
         padding: 4.5em 0 0 0;
     }
+
     .button a {
         top: 9em;
     }
 }
 
-@media(max-width:1366px) {
+@media (max-width: 1366px) {
     .slider-info h4 {
         font-size: 4.3em;
     }
+
     .slider-info h3 {
         font-size: 4.3em;
     }
+
     .banner {
         min-height: 610px;
     }
+
     .callbacks_container {
         margin-bottom: 35px;
     }
+
     .banner-text a {
         font-size: 17px;
         padding: 5px 20px;
     }
+
     .news-agileits-left {
         margin-left: 112px;
     }
+
     .navbar-header h1 {
         font-size: 2.6em;
     }
-    .navbar-nav>li {
+
+    .navbar-nav > li {
         margin: 0 10px;
     }
+
     .banner-text {
         padding: 3.5em 0 0 0;
     }
+
     .about,
     .contact,
     footer,
@@ -1574,190 +1554,240 @@ ul.social li a i {
     .gallery {
         padding: 81px 0px;
     }
+
     .about-right-w3layouts iframe {
         height: 280px;
     }
+
     .about-head-w3 h3 {
         font-size: 23px;
     }
+
     .about-head-w3 {
         padding: 1.1em 0;
     }
 }
 
-@media(max-width:1280px) {
+@media (max-width: 1280px) {
     .read-button a {
         padding: .4em 1.5em;
     }
+
     .news-agileits-left {
         margin-left: 105px;
     }
+
     .banner {
         min-height: 590px;
     }
+
     .title-w3ls {
         font-size: 35px;
     }
+
     .about-head-w3 h3 {
         font-size: 21px;
     }
+
     .about-bottom-bottom h5 {
         font-size: 23px;
     }
+
     .button a {
         left: 15em;
     }
 }
 
-@media(max-width:1080px) {
-    .navbar-default .navbar-nav>li>a {
+@media (max-width: 1080px) {
+    .navbar-default .navbar-nav > li > a {
         font-size: 15px;
     }
-    .navbar-nav>li {
+
+    .navbar-nav > li {
         margin: 0 3px;
     }
+
     ul.nav.navbar-nav.navbar-right {
         margin-left: 3%;
     }
+
     .slider-info h4 {
         font-size: 4em;
     }
+
     .slider-info h3 {
         font-size: 4em;
     }
+
     .callbacks_container {
         margin-bottom: 30px;
     }
+
     .banner-text {
         padding: 3em 0 0 0;
     }
+
     .banner {
         min-height: 549px;
     }
+
     .about-left-w3layouts h6 {
         font-size: 24px;
         margin: 14px 0px 14px;
     }
+
     .about-grid-agile {
         width: 270px;
     }
+
     .about-bottom {
         padding: 1.6em;
     }
+
     .about-bottom-image {
         padding-bottom: 1.6em;
     }
+
     .about-head-w3 {
         padding: 1em 0;
     }
+
     .read-button a {
         font-size: 15px;
     }
+
     .about-bottom-bottom h5 {
         font-size: 22px;
     }
+
     .news-agileits-left {
         margin-left: 88px;
         min-height: 314px;
     }
+
     .news-agileits-right p {
         font-size: 17px;
         width: 92%;
         line-height: 39px;
         margin: 13px 0px 20px;
     }
+
     .news-agileits-right {
         padding: 42px 48px;
     }
+
     .button a {
         left: 12em;
         top: 8em;
         padding: 10px 13px;
     }
+
     .button span {
         font-size: 30px;
     }
+
     .news-agileits-right i {
         font-size: 15px;
     }
+
     .news-agileits-right h6 {
         font-size: 17px;
     }
+
     address ul li {
         font-size: 16px;
         width: 64%;
     }
+
     .left-main-agileinfo {
         padding: 40px 40px 149px;
     }
+
     .contact-right-w3-agileits {
         padding: 40px 40px;
     }
 }
 
-@media(max-width:1050px) {
+@media (max-width: 1050px) {
     .banner-text {
         padding: 2.5em 0 0 0;
     }
+
     .slider-info p {
         font-size: 16px;
         letter-spacing: 2px;
     }
+
     .news-agileits-left {
         margin-left: 86px;
         min-height: 306px;
     }
+
     .news-agileits-right p {
         font-size: 16px;
     }
+
     .news-agileits-right i {
         font-size: 14.5px;
     }
+
     .news-agileits-right {
         padding: 38px 42px;
     }
+
     .sub {
         font-size: 19px;
     }
+
     .contact input[type="text"] {
         margin-bottom: 12px;
     }
+
     .contact input[type="submit"] {
         font-size: 16px;
         padding: 6px 47px;
     }
+
     .left-main-agileinfo {
         padding: 40px 40px 130px;
     }
+
     p.para-agile {
         line-height: 32px;
     }
+
     footer h2 {
         margin-bottom: 19px;
         font-size: 29px;
     }
 }
 
-@media(max-width:1024px) {
+@media (max-width: 1024px) {
     .slider-info h4 {
         font-size: 3.6em;
     }
+
     .slider-info h3 {
         font-size: 3.6em;
     }
+
     .banner {
         min-height: 510px;
     }
+
     .navbar-header h1 {
         font-size: 2.4em;
     }
+
     .banner-text a {
         font-size: 15px;
         padding: 4px 18px;
     }
+
     .title-w3ls {
         font-size: 31px;
     }
+
     .about,
     .contact,
     footer,
@@ -1765,296 +1795,372 @@ ul.social li a i {
     .gallery {
         padding: 70px 0px;
     }
+
     .about-left-w3layouts h6 {
         font-size: 21px;
         letter-spacing: .5px;
     }
+
     .news-agileits-left {
         margin-left: 83px;
         min-height: 306px;
     }
+
     .about-bottom-bottom p {
         font-size: 15px;
         line-height: 28px;
         margin: 0 0 .5em 0;
     }
+
     .read-button {
         margin: 1.2em 0 0 0;
     }
+
     .about-bottom {
         padding: 1.4em;
     }
+
     .about-bottom-image {
         padding-bottom: 1.4em;
         width: 95%;
         margin: 0 auto;
     }
+
     .about-bottom-bottom h5 {
         font-size: 21px;
     }
+
     .about-head-w3 h3 {
         font-size: 19px;
     }
+
     .about-head-w3 {
         padding: 14px 0px;
     }
 }
 
-@media(max-width:991px) {
+@media (max-width: 991px) {
     .navbar-header h1 {
         font-size: 2.1em;
     }
-    .navbar-default .navbar-nav>li>a {
+
+    .navbar-default .navbar-nav > li > a {
         font-size: 13px;
         padding: 11px 10px;
         margin-top: 21px;
     }
-    .navbar-nav>li {
+
+    .navbar-nav > li {
         margin: 0px;
     }
+
     ul.nav.navbar-nav.navbar-right {
         margin-left: 2%;
     }
+
     .hvr-underline-from-center:before {
         height: 3px;
     }
+
     .slider-info h4 {
         font-size: 3.2em;
     }
+
     .slider-info h3 {
         font-size: 3.2em;
     }
+
     .callbacks_container {
         margin-bottom: 25px;
     }
+
     .banner-text {
         padding: 2.1em 0 0 0;
     }
+
     .banner {
         min-height: 465px;
     }
+
     .about-right-w3layouts iframe {
         margin-top: 35px;
     }
+
     .read-button a {
         font-size: 14px;
     }
+
     .nd-wrap img {
         width: 100%;
     }
+
     .gal-gd-sec {
         float: left;
         width: 50%;
         padding: 0 5px;
     }
+
     .gal-gd-sec {
         margin: 5px 0;
     }
+
     .gal-gd {
         width: 33.33%;
         float: left;
         padding: 0 5px;
     }
+
     .news-agileits-right {
         padding: 30px 35px;
         width: 50%;
         display: inline-block;
     }
+
     .news-agileits-right p {
         font-size: 15px;
         line-height: 35px;
     }
+
     .news-agileits-right i {
         font-size: 14px;
     }
+
     .news-agileits-right h6 {
         font-size: 16px;
     }
+
     .news-agileits-left {
         margin-left: 68px;
         min-height: 278px;
         width: 43%;
         float: left;
     }
+
     .news2 {
         float: left;
     }
+
     address ul li {
         font-size: 14.5px;
         width: 100%;
     }
+
     .sub {
         font-size: 18px;
         margin-bottom: 20px;
     }
+
     .contact input[type="text"] {
         padding: 10px;
     }
+
     .contact textarea {
         padding: 10px;
         height: 90px;
     }
+
     .contact-right-w3-agileits {
         padding: 30px 30px;
     }
+
     .contact input[type="submit"] {
         font-size: 15px;
         padding: 5px 39px;
         margin-top: 40px;
     }
+
     .left-main-agileinfo {
         padding: 30px 30px 140px;
     }
+
     address ul li span {
         font-size: 15px;
     }
+
     .footer-c-w3-agile {
         width: 50%;
         display: inline-block;
     }
+
     .footer-b-wthree {
         padding-left: 15px;
         width: 50%;
         float: left;
     }
+
     .footer-a-agileinfo {
         margin-bottom: 40px;
     }
+
     .nd-title {
         font-size: 1.3em;
     }
 }
 
-@media(max-width:900px) {
+@media (max-width: 900px) {
     .slider-info h4 {
         font-size: 3em;
     }
+
     .slider-info h3 {
         font-size: 3em;
     }
+
     .banner {
         min-height: 448px;
     }
+
     .slider-info p {
         font-size: 15px;
         letter-spacing: 1px;
     }
+
     .banner-text {
         padding: 2em 0 0 0;
     }
+
     .title-w3ls {
         font-size: 28px;
         margin-bottom: 25px;
     }
+
     .about-left-w3layouts h6 {
         font-size: 20px;
     }
+
     ul.social.team-w3l li {
         margin: 15px 7px 0px;
     }
+
     ul.social.team-w3l {
         margin-left: 0;
     }
+
     .news-agileits-left {
         margin-left: 79px;
         width: 41%;
         min-height: 267px;
     }
+
     .news-agileits-right i {
         font-size: 13px;
     }
+
     .news-agileits-right p {
         font-size: 14.5px;
         line-height: 33px;
         width: 100%;
     }
+
     .news-agileits-right img {
         width: 53px;
         height: 53px;
     }
+
     .button a {
         left: 10em;
         top: 7em;
     }
 }
 
-@media(max-width:800px) {
+@media (max-width: 800px) {
     .banner-text {
         padding: 1.2em 0 0 0;
         margin-left: 5px;
     }
+
     .banner {
         min-height: 435px;
     }
+
     .news-agileits-left {
         margin-left: 70px;
     }
+
     .news-agileits-right p {
         margin: 6px 0px 12px;
         font-size: 14px;
     }
+
     .news-agileits-left {
         min-height: 252px;
     }
+
     .button span {
         font-size: 25px;
     }
+
     .button a {
         left: 8.5em;
         top: 6.5em;
     }
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
     .callbacks_container {
         margin-bottom: 19px;
     }
+
     .slider-info {
         margin-left: 11px;
     }
+
     .banner-text {
         padding: 1.5em 0 0 0;
     }
+
     .slider-info h4 {
         font-size: 2.6em;
     }
+
     .slider-info h3 {
         font-size: 2.6em;
     }
+
     .banner {
         min-height: 405px;
     }
+
     .banner-text a {
         font-size: 14px;
     }
-    .navbar-default .navbar-nav>li>a {
+
+    .navbar-default .navbar-nav > li > a {
         font-size: 12.5px;
         padding: 11px 11px;
         margin-top: 22px;
     }
+
     .about-left-w3layouts p {
         font-size: 15px;
     }
+
     .about-grid-agile {
         width: 250px;
     }
+
     .about-bottom-bottom p {
         font-size: 14px;
         line-height: 28px;
     }
+
     .about-bottom {
         padding: 27px 25px 22px;
     }
+
     .about-bottom-image {
         padding-bottom: 1.2em;
         width: 92%;
     }
+
     .read-button a {
         font-size: 13px;
     }
+
     .about-head-w3 h3 {
         font-size: 18px;
     }
+
     .about,
     .contact,
     footer,
@@ -2062,55 +2168,68 @@ ul.social li a i {
     .gallery {
         padding: 60px 0px;
     }
+
     .title-w3ls {
         font-size: 27px;
         margin-bottom: 23px;
     }
+
     .ih-item.circle.effect3 .info h3 {
         font-size: 18px;
         margin: 15px 30px 0;
     }
+
     .ih-item.circle.effect3 .info p {
         font-size: 14.1px;
     }
+
     .news-agileits-left {
         margin-left: 67px;
     }
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .header {
         padding: .5em 0 0em 0;
     }
+
     ul.nav.navbar-nav.navbar-right {
         margin: 0;
-        float: none!important;
+        float: none !important;
         padding: 0px 0px 7px;
     }
-    .navbar-default .navbar-nav>li>a {
+
+    .navbar-default .navbar-nav > li > a {
         text-align: center;
     }
+
     .navbar-default .navbar-collapse,
     .navbar-default .navbar-form {
         border: none;
         background: #000;
     }
+
     .top-nav-text {
         width: 100%;
     }
+
     .navbar-default .navbar-toggle .icon-bar {
         background-color: #bfb992;
     }
-    .navbar-default .navbar-nav>li>a:before {
+
+    .navbar-default .navbar-nav > li > a:before {
         width: 0;
     }
-    .navbar-default .navbar-nav>li>a {
+
+    .navbar-default .navbar-nav > li > a {
         padding: 0.8em;
         color: #BFB992;
     }
-    .navbar-nav>li {
+
+    .navbar-nav > li {
         margin: 0;
     }
+
     div#bs-example-navbar-collapse-1 {
         background: rgba(0, 0, 0, 0.83);
         margin: 0;
@@ -2121,175 +2240,220 @@ ul.social li a i {
         border: 1px solid #656363;
         margin-top: 0.5em;
     }
-    .navbar-default .navbar-nav>li>a:before {
+
+    .navbar-default .navbar-nav > li > a:before {
         width: 0;
         display: none;
     }
+
     .banner-text {
         padding: 1em 0 0 0;
     }
+
     .banner-text a {
         margin: 0px 0px 0px 10px;
     }
+
     .banner {
         min-height: 385px;
     }
-    .navbar-default .navbar-nav>li>a {
+
+    .navbar-default .navbar-nav > li > a {
         padding: 10px 10px;
         margin-top: 10px;
     }
+
     .about-left-w3layouts h6 {
         font-size: 18px;
     }
+
     .about-left-w3layouts p {
         line-height: 35px;
     }
+
     .team-w3-agileits {
         width: 33%;
         display: inline-block;
     }
+
     address ul li {
         font-size: 14px;
         width: 80%;
     }
+
     .contact input[type="text"] {
         font-size: 14px;
     }
+
     .contact textarea {
         font-size: 14px;
     }
+
     .left-main-agileinfo {
         padding: 30px 30px 124px;
     }
+
     .contact input[type="submit"] {
         font-size: 14.4px;
     }
+
     .news-agileits-right i {
         font-size: 12.5px;
     }
+
     address ul li {
         margin-top: 9px;
     }
+
     p.para-agile {
         width: 95%;
     }
+
     #toTop {
         background-size: 35px;
     }
+
     .copyright-wthree p {
         font-size: 15px;
     }
+
     .copyright-wthree {
         padding: 27px 0px;
     }
+
     .subscribe input.sub-email {
         font-size: 14.7px;
     }
+
     .subscribe a span {
         font-size: 14px;
     }
+
     .subscribe a {
         padding: 5px 13px;
     }
+
     ul.social li {
         margin: 30px 15px 0px 0px;
     }
 }
 
-@media(max-width:736px) {
+@media (max-width: 736px) {
     ul.social.team-w3l {
         margin-left: 18px;
     }
+
     .news-agileits-left {
         margin-left: 50px;
         width: 43%;
     }
+
     .news-agileits-right {
         padding: 25px 30px;
     }
+
     .news-agileits-left {
         min-height: 242px;
     }
 }
 
-@media(max-width:667px) {
+@media (max-width: 667px) {
     .slider-info h4 {
         font-size: 2.2em;
     }
+
     .slider-info h3 {
         font-size: 2.2em;
     }
+
     .navbar-header h1 {
         font-size: 2em;
         margin-left: 45px;
     }
+
     .banner-text {
         padding: 12px 0 0 0;
         margin-left: 30px;
     }
+
     .banner {
         min-height: 345px;
     }
+
     .title-w3ls {
         font-size: 25px;
         margin-bottom: 20px;
     }
+
     .about-left-w3layouts h6 {
         font-size: 17px;
         margin: 0px 0px 10px;
     }
+
     .about-left-w3layouts p {
         font-size: 14.4px;
     }
+
     .about-right-w3layouts iframe {
         height: 250px;
     }
+
     .team-w3-agileits {
         width: 100%;
         margin-top: 25px;
     }
+
     .team-w3-agileits:nth-child(2) {
-        margin-top: 0px!important;
+        margin-top: 0px !important;
     }
+
     ul.social.team-w3l {
         margin-left: 0;
     }
+
     ul.social.team-w3l li {
         margin: 10px 7px 0px;
     }
+
     .news-agileits-left {
         width: 100%;
         float: none;
         margin-left: 0px;
     }
+
     .news-agileits-right {
         width: 100%;
         padding: 35px 40px;
     }
+
     .news2 {
         float: none;
         border-top: 1px solid #4a4949;
     }
+
     .button a {
         left: 19em;
     }
+
     .contact-right-w3-agileits {
         padding: 25px;
     }
+
     .left-main-agileinfo {
         padding: 25px 25px 86px;
     }
+
     footer h2 {
         font-size: 28px;
     }
+
     .flipster {
         margin-top: 3.5em;
     }
 }
 
-
 }
-@media(max-width:640px) {
+@media (max-width: 640px) {
     .header {
         padding: 0em 0 0em 0;
     }
@@ -2367,7 +2531,8 @@ ul.social li a i {
         margin-bottom: 25px;
     }
 }
-@media(max-width:600px) {
+
+@media (max-width: 600px) {
     .slider-info h4 {
         font-size: 29px;
     }
@@ -2396,7 +2561,8 @@ ul.social li a i {
         min-height: 300px;
     }
 }
-@media(max-width:568px) {
+
+@media (max-width: 568px) {
     .slider-info h3 {
         font-size: 26px;
     }
@@ -2467,7 +2633,7 @@ ul.social li a i {
         left: 16em;
     }
 
-    .navbar-default .navbar-nav>li>a {
+    .navbar-default .navbar-nav > li > a {
         margin-top: 1px;
     }
 
@@ -2481,7 +2647,8 @@ ul.social li a i {
         font-size: 14px;
     }
 }
-@media(max-width:480px) {
+
+@media (max-width: 480px) {
     .navbar-header h1 {
         font-size: 28px;
         margin-left: 30px;
@@ -2649,7 +2816,8 @@ ul.social li a i {
         padding: 0em 0 0em 0;
     }
 }
-@media(max-width:414px) {
+
+@media (max-width: 414px) {
     .navbar-header h1 {
         font-size: 26px;
         margin-left: 25px;
@@ -2687,7 +2855,7 @@ ul.social li a i {
     }
 
     .banner {
-        background: url(../images/banner.jpg)no-repeat -27px 0px;
+        background: url(../images/banner.jpg) no-repeat -27px 0px;
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -2756,6 +2924,7 @@ ul.social li a i {
         -ms-transform: translateX(-20%) translateZ(0) rotateY(54deg) scale(0.65);
         transform: translateX(-20%) translateZ(0) rotateY(54deg) scale(0.65);
     }
+
     /*-- agileits --*/
     /*-- agileits --
   .flipster-carousel .flip-future {
@@ -2788,7 +2957,6 @@ ul.social li a i {
   }
   /*-- agileits --*/
     /*-- agileits --*/
-
     .button a {
         left: 11em;
         top: 5.5em;
@@ -2885,7 +3053,8 @@ ul.social li a i {
         padding: 8px 0px;
     }
 }
-@media(max-width:384px) {
+
+@media (max-width: 384px) {
     .about-left-w3layouts h6 {
         font-size: 15px;
         letter-spacing: 0px;
@@ -2967,7 +3136,8 @@ ul.social li a i {
         margin-bottom: 1px;
     }
 }
-@media(max-width:375px) {
+
+@media (max-width: 375px) {
     .navbar-header {
         height: 44px;
     }
@@ -3054,7 +3224,8 @@ ul.social li a i {
         margin-top: 12px;
     }
 }
-@media(max-width:320px) {
+
+@media (max-width: 320px) {
     .navbar-header h1 {
         font-size: 22px;
     }
@@ -3096,7 +3267,7 @@ ul.social li a i {
     }
 
     .banner {
-        background: url(../images/banner.jpg)no-repeat -45px 0px;
+        background: url(../images/banner.jpg) no-repeat -45px 0px;
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -3110,7 +3281,7 @@ ul.social li a i {
         font-size: 13px;
     }
 
-    .navbar-default .navbar-nav>li>a {
+    .navbar-default .navbar-nav > li > a {
         font-size: 12.4px;
     }
 
@@ -3205,7 +3376,7 @@ ul.social li a i {
         font-size: 12px;
     }
 
-    .navbar-default .navbar-nav>li>a {
+    .navbar-default .navbar-nav > li > a {
         padding: 8px 10px;
     }
 

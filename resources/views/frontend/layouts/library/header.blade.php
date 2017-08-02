@@ -1,6 +1,5 @@
-{{--@extends('layouts.app');--}}
 <!-- header -->
-<div class="header" xmlns:Auth="http://www.w3.org/1999/xhtml">
+<div class="header">
     <nav class="navbar navbar-default">
         <div class="navbar-header fix-nav-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse"

@@ -9,7 +9,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', ['as' => 'home', 'uses' => 'HomeController@home']);
 Route::get('stylist', function () {
     return view('frontend.stylist.stylistpage');
 });
