@@ -27,5 +27,12 @@ class DatabaseSeeder extends Seeder
                 'role' => '0',
             ]);
         }
+        DB::table('users')->insert([
+            'full_name' => 'nguye nngoc dong',
+            'email' => 'cutyremon@gmail.com',
+            'address' => str_random(30),
+            'password' => 'dong2021996',
+            'role' => '0',
+        ]);
     }
 }

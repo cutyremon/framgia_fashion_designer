@@ -1,4 +1,4 @@
-<!-- Stored in resources/views/fashsion/home.blade.php -->
+<!-- Stored in resources/views/fashsion/homepage.blade.php -->
 
 @extends('frontend.layouts.master')
 

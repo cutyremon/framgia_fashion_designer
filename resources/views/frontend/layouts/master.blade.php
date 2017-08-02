@@ -24,7 +24,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     {{ Html::style('css/popuo-box.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
     {{ Html::style('css/chocolat.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
     {{ Html::style('css/owl.carousel.css', ['rel' => 'stylesheet', 'type' =>'text/css']) }}
-    
+    {{ Html::style('css/login.css', ['rel' => 'stylesheet']) }}
+
     @yield('custom-css')
 </head>
 <body>
