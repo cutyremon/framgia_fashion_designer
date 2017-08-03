@@ -232,5 +232,6 @@ return [
     'email_defaultt' => 'nguyenngocdong@gmail.com',
     'password_defaultt' => 'nguyenngocdong2021996',
     'user_name_defaultt' => 'nguyen ngoc dong',
+
 ];
 
