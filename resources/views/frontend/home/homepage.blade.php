@@ -196,25 +196,25 @@
     <!-- contact -->
     <div class="contact" id="contact">
         <div class="container">
-            <h5 class="title-w3ls">Contact</h5>
+            <h5 class="title-w3ls">{{__('contact')}}</h5>
             <div class="contact-main-agileinfo">
                 <div class="left-main-agileinfo">
-                    <h6 class="sub">Contact Us</h6>
+                    <h6 class="sub">{{__('contact us')}}</h6>
                     <address>
                         <ul>
-                            <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Address : Hà Nội
+                            <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> {{__('anddress')}}: Hà Nội
                             </li>
-                            <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Telephone : +1
+                            <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{__('telephone')}} : +1
                                 (958)
                                 123-3667
                             </li>
-                            <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email : <a
+                            <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> {{__('email')}} : <a
                                         class="mail" href="mailto:mail@example.com">hoangduyib96@gmail.com</a></li>
                         </ul>
                     </address>
                 </div>
                 <div class="contact-right-w3-agileits">
-                    <h6 class="sub">Contact Form</h6>
+                    <h6 class="sub">{{__('contact form')}}</h6>
                     <form action="#" method="post">
                         <input type="text" name="Name" placeholder="Your Name" required="">
                         <input class="email" type="text" name="Email" placeholder="Phone or Email" required="">

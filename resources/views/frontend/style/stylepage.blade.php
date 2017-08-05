@@ -5,7 +5,7 @@
     <div class="gallery" id="gallery">
         <!-- gallery -->
         <div class="container">
-            <h5 class="title-w3ls"><a href="#">Style</a></h5>
+            <h5 class="title-w3ls"><a href="#">{{__('style')}}</a></h5>
             <div class="gal-btm">
                 <div class="col-md-4 gal-gd wow fadeInLeft animated" data-wow-delay=".5s">
                     <a href="#image-1">

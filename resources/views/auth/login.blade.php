@@ -11,7 +11,7 @@
                     <div id="login" class="animate form">
                         {{--<form action="mysuperscript.php" autocomplete="on">--}}
                         {{--<div class="panel-heading">Login</div>--}}
-                        <h1>Log in</h1>
+                        <h1>{{__('sign in')}}</h1>
                         <div class="panel-body">
                             {{--<form class="form-horizontal" method="POST" action="{{ route('login') }}">--}}
                             <form class="form-horizontal" method="post" action="{{route('login')}}">
@@ -19,7 +19,7 @@
 
                                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                     {{--<label for="email" class="col-md-4 control-label">E-Mail Address</label>--}}
-                                    <label for="email" class="username"> Your email </label>
+                                    <label for="email" class="username">{{__('your username')}}</label>
 
                                     {{--<div class="col-md-6">--}}
                                     <input id="email" type="text" riquered="riquered" name="email"
@@ -34,7 +34,7 @@
 
                                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                     {{--<label for="password" class="col-md-4 control-label">Password</label>--}}
-                                    <label for="password" class="youpassword"> Your password </label>
+                                    <label for="password" class="youpassword"> {{__('your password')}} </label>
 
                                     {{--<div class="col-md-6">--}}
                                     <input id="password" type="password" name="password"
@@ -54,24 +54,23 @@
                                             <label>
                                                 <input type="checkbox"
                                                        name="remember" {{ old('remember') ? 'checked' : '' }}>
-                                                Remember
-                                                Me
+                                                {{__('remember me')}}
                                             </label>
                                         </div>
                                     </div>
                                 </div>
                                 <p class="login button">
-                                    <input href="{{route('home')}}" type="submit" value="Sign in"/>
+                                    <input href="{{route('home')}}" type="submit" value="{{__('sign in')}}"/>
                                     {{--<a href="http://cookingfoodsworld.blogspot.in/" target="_blank"></a>--}}
                                 </p>
                                 <p class="change_link">
-                                    Not a member yet ?
-                                    <a href="{{route('register')}}" class="to_register">Register</a>
+                                    {{__('not a member yet ?')}}
+                                    <a href="{{route('register')}}" class="to_register">{{__('register')}}</a>
                                 </p>
 
                                 <div class="col-md-8 col-md-offset-1">
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        Forgot Your Password?
+                                        {{__('forgot your password')}}
                                     </a>
                                 </div>
                                 {{--<div class="form-group">--}}

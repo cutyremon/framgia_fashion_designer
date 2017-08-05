@@ -4,7 +4,7 @@
 <!-- Right to left-->
     <div class="team" id="designers">
         <div class="container">
-            <h5 class="title-w3ls"><a href="#">Stylist</a></h5>
+            <h5 class="title-w3ls"><a href="#">{{__('stylist')}}</a></h5>
             <div class="col-sm-4 team-w3-agileits">
                 <!-- normal -->
                 <div class="ih-item circle effect3 bottom_to_top"><a href="#">

@@ -9,22 +9,25 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', ['as' => 'home', 'uses' => 'HomeController@home']);
-Route::get('stylist', function () {
-    return view('frontend.stylist.stylistpage');
-});
-Route::get('style', function () {
-    return view('frontend.style.stylepage');
-});
-Auth::routes();
+Route::group(['middleware' => 'localization'], function () {
+    Route::get('home', 'HomeController@home')->name('home');
+    Route::get('stylist', function () {
+        return view('frontend.stylist.stylistpage');
+    });
+    Route::get('style', function () {
+        return view('frontend.style.stylepage');
+    });
+    Auth::routes();
 //    Route::get('/home', 'HomeController@index')
-Route::get('logout', function () {
-    if (Auth::check()) {
-        Auth::logout();
-    }
-    return view('frontend.home.homepage');
-});
-Route::get('profile', function () {
-    return view('frontend.profile.user_profile');
+    Route::get('logout', function () {
+        if (Auth::check()) {
+            Auth::logout();
+        }
+        return view('frontend.home.homepage');
+    });
+    Route::get('profile', function () {
+        return view('frontend.profile.user_profile');
+    });
+    Route::get('localization/{id}', 'HomeController@changeL')->name('localization');
 });
 

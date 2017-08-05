@@ -14,9 +14,9 @@
         <!-- navbar-header -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-right-custom">
-                <li><a href="#home" class="hvr-underline-from-center active">Home</a></li>
+                <li><a href="#home" class="hvr-underline-from-center active">{{__('home')}}</a></li>
                 <li class="dropdown"><a class="dropdown-toggle hvr-underline-from-center scroll" data-toggle="dropdown"
-                                        href="#">Catelories<span class="caret"></span></a>
+                                        href="#">{{__('catelories')}}<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Mũ</a></li>
                         <li><a href="#">Quần</a></li>
@@ -26,16 +26,16 @@
                         <li><a href="#">Trang Sức</a></li>
                     </ul>
                 </li>
-                <li><a href="#designers" class="hvr-underline-from-center scroll">Stylist</a></li>
-                <li><a href="#gallery" class="hvr-underline-from-center scroll">Style</a></li>
-                <li><a href="#contact" class="hvr-underline-from-center scroll">Contact Us</a></li>
+                <li><a href="#designers" class="hvr-underline-from-center scroll">{{__('stylist')}}</a></li>
+                <li><a href="#gallery" class="hvr-underline-from-center scroll">{{__('style')}}</a></li>
+                <li><a href="#contact" class="hvr-underline-from-center scroll">{{__('contact us')}}</a></li>
                 @if (Auth::guest())
-                    <button class="btn btn-success navbar-btn fix-btn"><a href="{{route('login')}}">SignIn</a></button>
-                    <button class="btn btn-success navbar-btn fix-btn"><a href="{{route('register')}}">SignUp</a>
+                    <button class="btn btn-success navbar-btn fix-btn"><a href="{{route('login')}}">{{__('sign in')}}</a></button>
+                    <button class="btn btn-success navbar-btn fix-btn"><a href="{{route('register')}}">{{__('sign up')}}</a>
                     </button>
                 @else
-                    <button class="btn btn-success navbar-btn fix-btn">WEBCOME:{{ Auth::User()->full_name}}</button>
-                    <button class="btn btn-success navbar-btn fix-btn"><a href="{{route('logout')}}">Logout</a></button>
+                    <button class="btn btn-success navbar-btn fix-btn">{{__('wedcome')}}:{{ Auth::User()->full_name}}</button>
+                    <button class="btn btn-success navbar-btn fix-btn"><a href="{{route('logout')}}">{{__('log out')}}</a></button>
                 @endif
             </ul>
         </div>

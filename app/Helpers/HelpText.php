@@ -2,6 +2,11 @@
 
 namespace App\Helpers;
 
+use Auth;
+use Session;
+use Closure;
+use Lang;
+
 /**
  * Created by PhpStorm.
  * User: Hoangduy
@@ -31,5 +36,54 @@ class HelpText
                 return '';
         }
     }
+
+    public static function getCurrentLanguage()
+    {
+        return Session::get('language', 'vn');
+    }
+
+//    public
+//    static function setLanguage($lang = 'vn')
+//    {
+//        Session::put('language', $lang);
+//    }
+
+    public static function changeLanguage()
+    {
+        $language = self::getCurrentLanguage();
+        switch ($language) {
+            case 'en':
+                $language = 'en';
+                break;
+
+            default:
+                $language = 'vn';
+                break;
+        }
+
+        config(['app.locale' => $language]);
+    }
+
+    public static function setLanguage($lang)
+    {
+        Session::put('language', $lang);
+    }
+
+    public static function changeLanguage_1($lang)
+    {
+        if ($lang == 'en') {
+            $language = 'en';
+        } else {
+            $language = 'vn';
+        }
+
+
+        self::setLanguage($language);
+
+
+//        return redirect()->back();
+    }
+
+
 }
 
