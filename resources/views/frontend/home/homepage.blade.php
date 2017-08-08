@@ -181,19 +181,6 @@
             </div>
         </div>
     </div>
-    {{--<div class="lb-overlay" id="image-1">--}}
-        {{--<img src="images/g1.jpg" alt="image1"/>--}}
-        {{--<div class="gal-info">--}}
-            {{--<h3>Gallery</h3>--}}
-            {{--<p>Neque porro quisquam est, qui dolorem ipsum--}}
-                {{--quia dolor sit amet, consectetur, adipisci velit,--}}
-                {{--sed quia non numquam eius modi tempora incidunt ut--}}
-                {{--labore et dolore magnam aliquam quaerat voluptatem.</p>--}}
-        {{--</div>--}}
-        {{--<a href="index.html" class="lb-close">Close</a>--}}
-    {{--</div>--}}
-    <!-- end style -->
-    <!-- contact -->
     <div class="contact" id="contact">
         <div class="container">
             <h5 class="title-w3ls">{{__('contact')}}</h5>
@@ -270,5 +257,6 @@
 @endsection('footer')
 
 @section('custom-css')
-    <link rel="stylesheet" type="text/css" media="all" href="css/custom-style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/custom-style.css">
+
 @endsection('custom-css')

@@ -1,3 +1,4 @@
+/*Style header*/
 .header {
     position: relative;
     padding: 1em 0 0em 0;
@@ -15,7 +16,8 @@ ul.nav.navbar-nav.navbar-right.fix-navbar-right {
 .fix-nav-header {
     margin-left: 3%;
 }
-
+/* //Style header*/
+/* Style homepage*/
 .carousel-inner > .item > img {
     width: 100%;
     height: 480px;
@@ -31,4 +33,4 @@ ul.nav.navbar-nav.navbar-right.fix-navbar-right {
     width: 380px;
     height: 305px;
 }
-
+/* //Style homepage*/

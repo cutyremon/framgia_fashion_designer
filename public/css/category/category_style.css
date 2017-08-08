@@ -1,0 +1,143 @@
+/*Style category*/
+
+.title-category {
+    color: #222222;
+    line-height: 1.1;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    float: left;
+    padding: 10px 0 15px 20px;
+    font-size: 180%;
+    font-family: fantasy;
+    text-transform: capitalize;
+}
+
+.nar-cate {
+    margin-top: 10px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #CCCCCC;
+    border: 0;
+}
+
+.nar-cate ul {
+    padding: 10px;
+}
+
+.product-item img {
+    height: 250px !important;
+    width: 250px !important;
+}
+
+.info-item {
+    text-align: center;
+    color: #333;
+    text-transform: capitalize;
+    margin: 10px 0 30px;
+}
+
+.wrap-sidebar {
+    padding-left: 30px;
+}
+
+.search {
+    margin-top: 10px;
+    float: left;
+    height: 150px;
+}
+
+.search h3 {
+    float: left;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #c80204;
+}
+
+.input-group {
+    width: 80%;
+}
+
+.sidebar-cate {
+    float: left;
+    margin-top: -25px;
+}
+
+.sidebar-cate h3 span {
+    font-size: 17px;
+    font-weight: 700;
+    color: #c80204;
+    float: left;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.sidebar-cate ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    clear: both;
+    text-transform: capitalize;
+    float: left;
+}
+
+.sidebar-cate > .color-list span {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px 15px 15px 15px;
+    border: 2px solid #cccccc;
+    margin-right: 4px;
+}
+
+.sidebar-cate > .color-list a, .sidebar-cate > .color-list span {
+    display: inline-block;
+    line-height: 30px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.color-white{
+    background-color: white;
+}
+
+.color-black{
+    background-color: black;
+}
+.color-blue{
+    background-color: blue;
+}
+.color-yellow{
+    background-color: yellow;
+}
+.color-red{
+    background-color: red;
+}
+.rate-list h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #c80204;
+    float: left;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.rate-list img {
+    width: 100px !important;
+    height: 120px !important;
+    float: left;
+}
+
+.rate-list a, .cate-list li {
+    color: #bd0103;
+    outline: 0;
+    text-decoration: none;
+    transition: .4s;
+    background-color: transparent;
+}
+
+/*//Style category*/
