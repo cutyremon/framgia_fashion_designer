@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <h1><a href="#home"><span>F</span>ramgia <span>F</span>ashsion </a></h1>
+            <h1><a href="#home"><span>F</span>ramgia <span>F</span>ashion </a></h1>
         </div>
         <!-- navbar-header -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -42,7 +42,6 @@
         <div class="clearfix"></div>
     </nav>
 </div>
-<script src="{{ asset('js/app.js') }}"></script>
 <!-- //header -->
 
 

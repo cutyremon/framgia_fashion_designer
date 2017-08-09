@@ -31,3 +31,7 @@ Route::group(['middleware' => 'localization'], function () {
     Route::get('localization/{id}', 'HomeController@changeL')->name('localization');
 });
 
+Route::get('category/{produce}', [
+    'as' => 'category',
+    'uses' => 'CategoryController@category'
+]);

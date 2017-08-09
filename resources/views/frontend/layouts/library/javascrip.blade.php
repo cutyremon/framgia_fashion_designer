@@ -1,5 +1,5 @@
-{{ Html::script('bower_components/jquery/dist/jquery.min.js', ['type' => 'text/javascript']) }}
-{{ Html::script('bower_components/ResponsiveSlides/responsiveslides.min.js') }}
+{{ Html::script('/bower_components/jquery/dist/jquery.min.js', ['type' => 'text/javascript']) }}
+{{ Html::script('/bower_components/ResponsiveSlides/responsiveslides.min.js') }}
 <script type="application/x-javascript"> addEventListener("load", function () {
         setTimeout(hideURLbar, 0);
     }, false);
@@ -27,8 +27,8 @@
     });
 </script>
 <!--light-box-files -->
-<script src="js/modernizr.custom.js"></script>
-<script src="js/jquery.chocolat.js"></script>
+<script src="/js/modernizr.custom.js"></script>
+<script src="/js/jquery.chocolat.js"></script>
 <!-- PopUp-Box-JavaScript -->
 <script type="text/javascript">
     $(function () {
@@ -38,8 +38,8 @@
 <!-- //PopUp-Box-JavaScript -->
 <!-- //js -->
 <!-- start-smoth-scrolling -->
-{{ Html::script('bower_components/ui-to-top/js/jquery.ui.totop.js', ['type' => 'text/javascript']) }}
-{{ Html::script('bower_components/jquery-easing/jquery.easing.js', ['type' => 'text/javascript']) }}
+{{ Html::script('/bower_components/ui-to-top/js/jquery.ui.totop.js', ['type' => 'text/javascript']) }}
+{{ Html::script('/bower_components/jquery-easing/jquery.easing.js', ['type' => 'text/javascript']) }}
 <script type="text/javascript">
     jQuery(document).ready(function ($) {
         $(".scroll").click(function (event) {
@@ -48,7 +48,7 @@
         });
     });
 </script>
-<script src="js/jquery.flipster.js"></script>
+<script src="/js/jquery.flipster.js"></script>
 <script>
     <!--
     $(function () {
@@ -58,7 +58,7 @@
 </script>
 <!-- start-smoth-scrolling -->
 <!-- required-js-files-->
-{{ Html::script('bower_components/owl.carousel/dist/owl.carousel.js') }}
+{{ Html::script('/bower_components/owl.carousel/dist/owl.carousel.js') }}
 <script>
     $(document).ready(function () {
         $("#owl-demo").owlCarousel({
@@ -95,9 +95,9 @@
         });
     });
 </script>
-{{ Html::script('bower_components/bootstrap/dist/js/bootstrap.min.js', ['type' => 'text/javascript']) }}
+{{ Html::script('/bower_components/bootstrap/dist/js/bootstrap.min.js', ['type' => 'text/javascript']) }}
 <!--pop-up-box -->
-{{ Html::script('bower_components/magnific-popup/dist/jquery.magnific-popup.js', ['type' => 'text/javascript']) }}
+{{ Html::script('/bower_components/magnific-popup/dist/jquery.magnific-popup.js', ['type' => 'text/javascript']) }}
 <script>
     $(document).ready(function () {
         $('.popup-with-zoom-anim').magnificPopup({
