@@ -29,6 +29,14 @@ Route::group(['middleware' => 'localization'], function () {
         return view('frontend.profile.user_profile');
     });
     Route::get('localization/{id}', 'HomeController@changeL')->name('localization');
+    Route::get('admin', function () {
+        return view('frontend.admin.admin');
+    });
+    Route::get('admin', 'Frontend\AdminController@postAdmin')->name('admin');
+
+    Route::post('postTopic', 'Frontend\TopicController@postTopic')->name('postTopic');
+    Route::post('postStyle', 'Frontend\StyleController@postStyle')->name('postStyle');
+    Route::post('postProduce', 'Frontend\ProduceController@postProduce')->name('postProduce');
 });
 
 Route::get('category/{produce}', [
