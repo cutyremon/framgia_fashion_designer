@@ -26,6 +26,9 @@ class Topic extends Model
     protected $fillable = [
         'id',
         'topic_name',
+        'image',
+        'description'
+
     ];
     /**
      * The attributes that are mass assignable.
@@ -40,3 +43,4 @@ class Topic extends Model
     	return $this->hasMany(Topic_Style::class);
     }
 }
+
