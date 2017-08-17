@@ -11,6 +11,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="_token" content="{{ csrf_token() }}"/>
     {{ Html::style('/bower_components/bootstrap/dist/css/bootstrap.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
     {{ Html::style('/bower_components/font-awesome/css/font-awesome.min.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
     <link href="//fonts.googleapis.com/css?family=Sansita+One" rel="stylesheet">
@@ -41,4 +42,5 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
 </body>
     @include('frontend.layouts.library.javascrip')
+    @yield('script')
 </html>

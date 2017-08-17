@@ -10,7 +10,7 @@
 |
 */
 Route::group(['middleware' => 'localization'], function () {
-    Route::get('home', 'HomeController@home')->name('home');
+    Route::get('/', 'HomeController@home')->name('home');
     Route::get('stylist', function () {
         return view('frontend.stylist.stylistpage');
     });
@@ -18,16 +18,15 @@ Route::group(['middleware' => 'localization'], function () {
         return view('frontend.style.stylepage');
     });
     Auth::routes();
-//    Route::get('/home', 'HomeController@index')
+
     Route::get('logout', function () {
         if (Auth::check()) {
             Auth::logout();
         }
         return view('frontend.home.homepage');
     });
-    Route::get('profile', function () {
-        return view('frontend.profile.user_profile');
-    });
+    Route::get('profile', [ 'as' => 'profile', 'uses' => 'ProfileController@profile' ]);
+
     Route::get('localization/{id}', 'HomeController@changeL')->name('localization');
     Route::get('admin', function () {
         return view('frontend.admin.admin');
@@ -39,7 +38,8 @@ Route::group(['middleware' => 'localization'], function () {
     Route::post('postProduce', 'Frontend\ProduceController@postProduce')->name('postProduce');
 });
 
-Route::get('category/{produce}', [
-    'as' => 'category',
-    'uses' => 'CategoryController@category'
-]);
+Route::get('category/{pro}', [ 'as' => 'category', 'uses' => 'CategoryController@category' ]);
+
+Route::post('search', ['as' => 'search', 'uses' => 'SearchController@allSearch']);
+
+

@@ -14,16 +14,15 @@
         <!-- navbar-header -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-right-custom">
-                <li><a href="#home" class="hvr-underline-from-center active">{{__('home')}}</a></li>
+                <li><a href="{{ route('home') }}" class="hvr-underline-from-center active">{{__('home')}}</a></li>
                 <li class="dropdown"><a class="dropdown-toggle hvr-underline-from-center scroll" data-toggle="dropdown"
-                                        href="#">{{__('catelories')}}<span class="caret"></span></a>
+                                        href="{{ route('category', [ 'pro' => '0' ]) }}">{{__('catelories')}}<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Mũ</a></li>
-                        <li><a href="#">Quần</a></li>
-                        <li><a href="#">Áo</a></li>
-                        <li><a href="#">Giày-Dép</a></li>
-                        <li><a href="#">Phụ Kiện</a></li>
-                        <li><a href="#">Trang Sức</a></li>
+                        @foreach($categories as $category)
+                            <li><a href="{{ route('category', [ 'pro' => $category->id ]) }}">
+                                    {!! $category->category_name !!}
+                                </a></li>
+                        @endforeach
                     </ul>
                 </li>
                 <li><a href="#designers" class="hvr-underline-from-center scroll">{{__('stylist')}}</a></li>

@@ -1,0 +1,27 @@
+.result {
+    margin-bottom: 20px;
+}
+
+.result h3 {
+    font-family: cursive;
+    font-size: 125%;
+}
+
+.result-null {
+    margin-top: 100px;
+    color: red;
+    font-size: xx-large;
+}
+
+.info-item h3 {
+    cursor: pointer;
+    font-family: cursive;
+    text-transform: initial;
+    color: darkslategrey;
+    font-size: 125%;
+    margin-top: -10px;
+}
+
+.info-item h3:hover {
+    color: red;
+}
