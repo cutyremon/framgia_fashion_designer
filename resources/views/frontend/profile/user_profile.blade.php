@@ -1,4 +1,11 @@
 @extends('frontend.layouts.master')
+
+@section('custom-css')
+    {{ Html::style('/css/custom-style.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
+    {{ Html::style('/css/profile/style_profile.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
+    {{ Html::style('/css/profile/custom-style_profile.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
+@endsection('custom-css')
+
 @section('content')
     <!-- Profile -->
     <div class="container">
@@ -230,7 +237,3 @@
     <!-- //Profile -->
 @endsection('content')
 
-@section('custom-css')
-    <link rel="stylesheet" type="text/css" href="css/style_profile.css">
-    <link rel="stylesheet" type="text/css" media="all" href="css/custom-style.css">
-@endsection('custom-css')

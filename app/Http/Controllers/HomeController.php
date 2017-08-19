@@ -14,6 +14,7 @@ use Lang;
 use Closure;
 use Illuminate\Support\Facades;
 use App\Http\Middleware\Locale;
+use App\Models\Category;
 
 class HomeController extends Controller
 {
@@ -21,50 +22,24 @@ class HomeController extends Controller
     protected $topic;
     protected $style;
     protected $user;
+    protected $category;
 
-//    public function changeLanguage(Request $request)
-//    {
-//        $lang = $request->language;
-//
-//        $language = 'vn';
-//        if ($lang == 'en') {
-//            $language = 'en';
-//        }
-//
-//        Locale::setLanguage($language);
-//
-//        return redirect()->back();
-//    }
-//    public
-//    static function setLanguage($lang)
-//    {
-//        Session::put('language', $lang);
-//    }
-//
-//    public function changeLanguage($lang)
-//    {
-//        if ($lang == 'en') {
-//            $language = 'en';
-//        }
-//        else {$language='vn';}
-//
-//
-//        self::setLanguage($language);
-//
-//
-//        return redirect()->back();
-//    }
-    public function changeL($lang)
+    public function changeLanguage($lang)
     {
         HelpText::changeLanguage_1($lang);
         return redirect()->back();
     }
 
-    public function __construct(Topic $topic, Style $style, User $user)
-    {
+    public function __construct(
+        Topic $topic,
+        Style $style,
+        User $user,
+        Category $category
+    ) {
         $this->topic = $topic;
         $this->style = $style;
         $this->user = $user;
+        $this->category = $category;
     }
 
     public function home()
@@ -72,8 +47,9 @@ class HomeController extends Controller
         $topics = $this->topic->orderBy('id', 'desc')->take(1)->get();
         $styles = $this->style->take(8)->get();
         $users = $this->user->where('id', '!=', 1)->take(3)->get();
+        $categories = $this->category->get();
 
-        return view('frontend.home.homepage', compact("topics", "users", "styles"));
+        return view('frontend.home.homepage', compact('topics', 'users', 'styles', 'categories'));
     }
 }
 
