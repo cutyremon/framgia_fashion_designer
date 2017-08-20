@@ -25,7 +25,7 @@ Route::group(['middleware' => 'localization'], function () {
         }
         return view('frontend.home.homepage');
     });
-    Route::get('profile', [ 'as' => 'profile', 'uses' => 'ProfileController@profile' ]);
+    Route::get('profile', 'ProfileController@profile')->name('profile');
 
     Route::get('localization/{id}', 'HomeController@changeL')->name('localization');
     Route::get('admin', function () {
@@ -36,10 +36,8 @@ Route::group(['middleware' => 'localization'], function () {
     Route::post('postTopic', 'Frontend\TopicController@postTopic')->name('postTopic');
     Route::post('postStyle', 'Frontend\StyleController@postStyle')->name('postStyle');
     Route::post('postProduce', 'Frontend\ProduceController@postProduce')->name('postProduce');
+    Route::get('category/{pro}', 'CategoryController@category')->name('category');
+    Route::post('search', 'SearchController@allSearch')->name('search');
 });
-
-Route::get('category/{pro}', [ 'as' => 'category', 'uses' => 'CategoryController@category' ]);
-
-Route::post('search', ['as' => 'search', 'uses' => 'SearchController@allSearch']);
 
 

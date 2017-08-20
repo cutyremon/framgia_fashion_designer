@@ -1,7 +1,7 @@
 {{ Html::style('/css/search/search_style.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
 
 <div class="result">
-    <h3><b>Kết quả tìm kiếm: {!! $keyword !!}</b></h3>
+    <h3><b>{{__('search results')}}: {!! $keyword !!}</b></h3>
 </div>
 <div>
     @if($listProduce->count() > 0)
@@ -14,7 +14,7 @@
                             <div class="nd-content_inner">
                                 <div class="nd-content_inner1">
                                     <h6 class="nd-title">{!! $produce->produce_name !!}</h6>
-                                    <h7 class="nd-title">Màu: {!! $produce->color !!}</h7>
+                                    <h7 class="nd-title">{{__('color')}}: {!! $produce->color !!}</h7>
                                     <span class="nd-icon">
                                     <i class="glyphicon glyphicon-heart-empty"></i>
                                 </span>
@@ -32,6 +32,7 @@
 <div class="col-lg-12" id="page-paginate">{{ $listProduce->links('frontend.components.paginate-review') }}</div>
 @else
     <div class="result-null">
-        <h3>Không có thông tin sản phẩm</h3>
+        <h3>{{__('no product information')}}</h3>
     </div>
 @endif
+
