@@ -44,91 +44,91 @@
     </div>
     <!--//end banner-->
     <!-- about -->
-    <div class="about" id="about">
-        <div class="container">
-            <h5 class="title-w3ls">About</h5>
-            <div class="col-md-6 about-left-w3layouts">
-                <h6 class="sub"> Creative ideas for your fashion</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, rds which don't look even slightly believable.
-                    If
-                    you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
-                    hidden in the middle of text.</p>
-            </div>
-            <div class="col-md-6 about-right-w3layouts">
-                <iframe src="https://player.vimeo.com/video/58238439"></iframe>
-            </div>
-            <div class="clearfix"></div>
-            <!-- Flipster List -->
-            <div class="flipster">
-                <ul>
-                    <li>
-                        <div class="about-grid-agile">
-                            <div class="about-head-w3">
-                                <h3>Products</h3>
-                            </div>
-                            <div class="about-bottom">
-                                <div class="about-bottom-image">
-                                    <img src="images/about1.jpg" alt=" " class="img-responsive">
-                                </div>
-                                <div class="about-bottom-bottom">
-                                    <p>Cras id odio elit. Ut scelerisque pellentesque tortor, metus eu.</p>
-                                    <h5>$100</h5>
-                                </div>
-                                <div class="read-button">
-                                    <a href="#news" class="scroll">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="about-grid-agile">
-                            <div class="about-head-w3">
-                                <h3>Services</h3>
-                            </div>
-                            <div class="about-bottom">
-                                <div class="about-bottom-image">
-                                    <img src="images/about2.jpg" alt=" " class="img-responsive">
-                                </div>
-                                <div class="about-bottom-bottom">
-                                    <p>Cras id odio elit. Ut scelerisque pellentesque tortor, metus eu.</p>
-                                    <h5>$150</h5>
-                                </div>
-                                <div class="read-button">
-                                    <a href="#news" class="scroll">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="about-grid-agile">
-                            <div class="about-head-w3">
-                                <h3>Services</h3>
-                            </div>
-                            <div class="about-bottom">
-                                <div class="about-bottom-image">
-                                    <img src="images/about3.jpg" alt=" " class="img-responsive">
-                                </div>
-                                <div class="about-bottom-bottom">
-                                    <p>Cras id odio elit. Ut scelerisque pellentesque tortor, metus eu.</p>
-                                    <h5>$200</h5>
-                                </div>
-                                <div class="read-button">
-                                    <a href="#news" class="scroll">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- End Flipster List -->
-        </div>
-    </div>
+    {{--<div class="about" id="about">--}}
+        {{--<div class="container">--}}
+            {{--<h5 class="title-w3ls">About</h5>--}}
+            {{--<div class="col-md-6 about-left-w3layouts">--}}
+                {{--<h6 class="sub"> Creative ideas for your fashion</h6>--}}
+                {{--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the--}}
+                    {{--industry's standard dummy text ever since the 1500s, rds which don't look even slightly believable.--}}
+                    {{--If--}}
+                    {{--you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing--}}
+                    {{--hidden in the middle of text.</p>--}}
+            {{--</div>--}}
+            {{--<div class="col-md-6 about-right-w3layouts">--}}
+                {{--<iframe src="https://player.vimeo.com/video/58238439"></iframe>--}}
+            {{--</div>--}}
+            {{--<div class="clearfix"></div>--}}
+            {{--<!-- Flipster List -->--}}
+            {{--<div class="flipster">--}}
+                {{--<ul>--}}
+                    {{--<li>--}}
+                        {{--<div class="about-grid-agile">--}}
+                            {{--<div class="about-head-w3">--}}
+                                {{--<h3>Products</h3>--}}
+                            {{--</div>--}}
+                            {{--<div class="about-bottom">--}}
+                                {{--<div class="about-bottom-image">--}}
+                                    {{--<img src="images/about1.jpg" alt=" " class="img-responsive">--}}
+                                {{--</div>--}}
+                                {{--<div class="about-bottom-bottom">--}}
+                                    {{--<p>Cras id odio elit. Ut scelerisque pellentesque tortor, metus eu.</p>--}}
+                                    {{--<h5>$100</h5>--}}
+                                {{--</div>--}}
+                                {{--<div class="read-button">--}}
+                                    {{--<a href="#news" class="scroll">Read More</a>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</li>--}}
+                    {{--<li>--}}
+                        {{--<div class="about-grid-agile">--}}
+                            {{--<div class="about-head-w3">--}}
+                                {{--<h3>Services</h3>--}}
+                            {{--</div>--}}
+                            {{--<div class="about-bottom">--}}
+                                {{--<div class="about-bottom-image">--}}
+                                    {{--<img src="images/about2.jpg" alt=" " class="img-responsive">--}}
+                                {{--</div>--}}
+                                {{--<div class="about-bottom-bottom">--}}
+                                    {{--<p>Cras id odio elit. Ut scelerisque pellentesque tortor, metus eu.</p>--}}
+                                    {{--<h5>$150</h5>--}}
+                                {{--</div>--}}
+                                {{--<div class="read-button">--}}
+                                    {{--<a href="#news" class="scroll">Read More</a>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</li>--}}
+                    {{--<li>--}}
+                        {{--<div class="about-grid-agile">--}}
+                            {{--<div class="about-head-w3">--}}
+                                {{--<h3>Services</h3>--}}
+                            {{--</div>--}}
+                            {{--<div class="about-bottom">--}}
+                                {{--<div class="about-bottom-image">--}}
+                                    {{--<img src="images/about3.jpg" alt=" " class="img-responsive">--}}
+                                {{--</div>--}}
+                                {{--<div class="about-bottom-bottom">--}}
+                                    {{--<p>Cras id odio elit. Ut scelerisque pellentesque tortor, metus eu.</p>--}}
+                                    {{--<h5>$200</h5>--}}
+                                {{--</div>--}}
+                                {{--<div class="read-button">--}}
+                                    {{--<a href="#news" class="scroll">Read More</a>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</li>--}}
+                {{--</ul>--}}
+            {{--</div>--}}
+            {{--<!-- End Flipster List -->--}}
+        {{--</div>--}}
+    {{--</div>--}}
     <!-- end about -->
     <!-- Right to left-->
     <div class="team" id="designers">
         <div class="container">
-            <h5 class="title-w3ls"><a href="#">Stylist</a></h5>
+            <h5 class="title-w3ls"><a href="#">{{__('stylist')}}</a></h5>
             @foreach($users as $user)
                 <div class="col-sm-4 team-w3-agileits">
                     <!-- normal -->
@@ -156,7 +156,7 @@
     <div class="gallery" id="gallery">
         <!-- gallery -->
         <div class="container">
-            <h5 class="title-w3ls"><a href="#">Style</a></h5>
+            <h5 class="title-w3ls"><a href="#">{{__('topic')}}</a></h5>
             <div class="gal-btm">
                 @for($i = 0; $i < count($styles); $i++)
                     <div class="{{ HelpText::stylesHome($i + 1) }}" data-wow-delay=".5s">
@@ -227,10 +227,9 @@
             <div class="col-md-4 footer-b-wthree">
                 <h6 class="sub">Links</h6>
                 <ul>
-                    <li><a class="scroll" href="#home">Home</a></li>
-                    <li><a class="scroll" href="#designers">Stylist</a></li>
-                    <li><a class="scroll" href="#gallery">Style</a></li>
-                    <li><a class="scroll" href="#about">About</a></li>
+                    <li><a class="scroll" href="#home">{{__('home')}}</a></li>
+                    <li><a class="scroll" href="#designers">{{__('stylist')}}</a></li>
+                    <li><a class="scroll" href="#gallery">{{__('topic')}}</a></li>
                 </ul>
             </div>
             <div class="col-md-4 footer-c-w3-agile">

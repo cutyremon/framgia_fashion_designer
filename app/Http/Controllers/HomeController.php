@@ -44,7 +44,7 @@ class HomeController extends Controller
 
     public function home()
     {
-        $topics = $this->topic->orderBy('id', 'desc')->take(1)->get();
+        $topics = $this->topic->orderBy('id', 'desc')->take(3)->get();
         $styles = $this->style->take(8)->get();
         $users = $this->user->where('id', '!=', 1)->take(3)->get();
         $categories = $this->category->get();

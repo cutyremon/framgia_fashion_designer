@@ -17,14 +17,14 @@
                                 <li>
                                     <a class="{{ $current_category == 0 ? 'active' : '' }}"
                                        href="{{ route('category', [ 'id' => '0' ]) }}">
-                                        Tất cả
+                                        {{__('all')}}
                                     </a>
                                 </li>
                                 @foreach($categories as $category)
                                     <li>
                                         <a class="{{ $current_category == $category->id ? 'active' : '' }}"
                                            href="{{ route('category', [ 'id' => $category->id ]) }}">
-                                            {!! $category->category_name !!}
+                                                {!! $category->category_name !!}
                                         </a>
                                     </li>
                                 @endforeach
@@ -40,9 +40,9 @@
             <div class="col-md-3 col-sm-4 wrap-sidebar">
                 <div class="row">
                     <div class="search">
-                        <h3><span>Tìm theo sảm phẩm</span></h3>
+                        <h3><span>{{__('search by product')}}</span></h3>
                         <div class="input-group">
-                            <input id="search-keyword" type="text" class="form-control" placeholder="Từ khóa tìm kiếm"
+                            <input id="search-keyword" type="text" class="form-control" placeholder="{{__('keyword search')}}"
                                    name="search-keyword">
                             <span class="input-group-btn">
                             <button id="search-button" class="btn btn-default" type="button">Go!</button>
@@ -53,34 +53,33 @@
 
                 <div class="row">
                     <div class="sidebar-cate">
-                        <h3><span>tìm theo giới tính</span></h3>
+                        <h3><span>{{__('search by gender')}}</span></h3>
                         <ul class="cate-list">
                             <li id="search-gender-1" data-gender="1">
-                                <i class="fa fa-hand-o-right"> Nam</i>
+                                <i class="fa fa-hand-o-right"> {{__('male')}}</i>
                             </li>
                             <li id="search-gender-2" data-gender="0">
-                                <i class="fa fa-hand-o-right"> Nữ</i>
+                                <i class="fa fa-hand-o-right"> {{__('female')}}</i>
                             </li>
                         </ul>
                         <input type="hidden" id="search-gender" name="search-gender">
                         <div class="clearfix"></div>
-
-                        <h3><span>tìm theo màu</span></h3>
+                        <h3><span>{{__('search by color')}}</span></h3>
                         <ul class="color-list">
                             <li id="search-color-1" data-color="white">
-                                <span class="color-white"></span> Màu Trắng
+                                <span class="color-white"></span>{{__('white')}}
                             </li>
                             <li id="search-color-2" data-color="black">
-                                <span class="color-black"></span>Màu Đen
+                                <span class="color-black"></span>{{__('black')}}
                             </li>
                             <li id="search-color-3" data-color="blue">
-                                <span class="color-blue"></span>Màu Xanh
+                                <span class="color-blue"></span>{{__('blue')}}
                             </li>
                             <li id="search-color-4" data-color="yellow">
-                                <span class="color-yellow"></span>Màu Vàng
+                                <span class="color-yellow"></span>{{__('yellow')}}
                             </li>
                             <li id="search-color-5" data-color="red">
-                                <span class="color-red"></span>Màu Đỏ
+                                <span class="color-red"></span>{{__('red')}}
                             </li>
                         </ul>
                         <input type="hidden" id="search-color" name="search-color">
@@ -89,7 +88,7 @@
 
                 <div class="row">
                     <div class="rate-list">
-                        <h3>sảm phâm hot</h3>
+                        <h3>{{__('hot product')}}</h3>
                         <div class="col-xs-12 rate-none">
                             <div class="col-xs-4">
                                 <a href="#"><img></a>
