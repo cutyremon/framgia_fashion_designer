@@ -23,7 +23,7 @@
                                     <li>
                                         <a class="{{ $current_category == $category->id ? 'active' : '' }}"
                                            href="{{ route('category', [ 'id' => $category->id ]) }}">
-                                                {!! $category->category_name !!}
+                                            {!! $category->category_name !!}
                                         </a>
                                     </li>
                                 @endforeach
@@ -41,7 +41,8 @@
                     <div class="search">
                         <h3><span>{{__('search by product')}}</span></h3>
                         <div class="input-group">
-                            <input id="search-keyword" type="text" class="form-control" placeholder="{{__('keyword search')}}"
+                            <input id="search-keyword" type="text" class="form-control"
+                                   placeholder="{{__('keyword search')}}"
                                    name="search-keyword">
                             <span class="input-group-btn">
                             <button id="search-button" class="btn btn-default" type="button">Go!</button>

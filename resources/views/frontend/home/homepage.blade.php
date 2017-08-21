@@ -49,84 +49,84 @@
     <!--//end banner-->
     <!-- about -->
     {{--<div class="about" id="about">--}}
-        {{--<div class="container">--}}
-            {{--<h5 class="title-w3ls">About</h5>--}}
-            {{--<div class="col-md-6 about-left-w3layouts">--}}
-                {{--<h6 class="sub"> Creative ideas for your fashion</h6>--}}
-                {{--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the--}}
-                    {{--industry's standard dummy text ever since the 1500s, rds which don't look even slightly believable.--}}
-                    {{--If--}}
-                    {{--you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing--}}
-                    {{--hidden in the middle of text.</p>--}}
-            {{--</div>--}}
-            {{--<div class="col-md-6 about-right-w3layouts">--}}
-                {{--<iframe src="https://player.vimeo.com/video/58238439"></iframe>--}}
-            {{--</div>--}}
-            {{--<div class="clearfix"></div>--}}
-            {{--<!-- Flipster List -->--}}
-            {{--<div class="flipster">--}}
-                {{--<ul>--}}
-                    {{--<li>--}}
-                        {{--<div class="about-grid-agile">--}}
-                            {{--<div class="about-head-w3">--}}
-                                {{--<h3>Products</h3>--}}
-                            {{--</div>--}}
-                            {{--<div class="about-bottom">--}}
-                                {{--<div class="about-bottom-image">--}}
-                                    {{--<img src="images/about1.jpg" alt=" " class="img-responsive">--}}
-                                {{--</div>--}}
-                                {{--<div class="about-bottom-bottom">--}}
-                                    {{--<p>Cras id odio elit. Ut scelerisque pellentesque tortor, metus eu.</p>--}}
-                                    {{--<h5>$100</h5>--}}
-                                {{--</div>--}}
-                                {{--<div class="read-button">--}}
-                                    {{--<a href="#news" class="scroll">Read More</a>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</li>--}}
-                    {{--<li>--}}
-                        {{--<div class="about-grid-agile">--}}
-                            {{--<div class="about-head-w3">--}}
-                                {{--<h3>Services</h3>--}}
-                            {{--</div>--}}
-                            {{--<div class="about-bottom">--}}
-                                {{--<div class="about-bottom-image">--}}
-                                    {{--<img src="images/about2.jpg" alt=" " class="img-responsive">--}}
-                                {{--</div>--}}
-                                {{--<div class="about-bottom-bottom">--}}
-                                    {{--<p>Cras id odio elit. Ut scelerisque pellentesque tortor, metus eu.</p>--}}
-                                    {{--<h5>$150</h5>--}}
-                                {{--</div>--}}
-                                {{--<div class="read-button">--}}
-                                    {{--<a href="#news" class="scroll">Read More</a>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</li>--}}
-                    {{--<li>--}}
-                        {{--<div class="about-grid-agile">--}}
-                            {{--<div class="about-head-w3">--}}
-                                {{--<h3>Services</h3>--}}
-                            {{--</div>--}}
-                            {{--<div class="about-bottom">--}}
-                                {{--<div class="about-bottom-image">--}}
-                                    {{--<img src="images/about3.jpg" alt=" " class="img-responsive">--}}
-                                {{--</div>--}}
-                                {{--<div class="about-bottom-bottom">--}}
-                                    {{--<p>Cras id odio elit. Ut scelerisque pellentesque tortor, metus eu.</p>--}}
-                                    {{--<h5>$200</h5>--}}
-                                {{--</div>--}}
-                                {{--<div class="read-button">--}}
-                                    {{--<a href="#news" class="scroll">Read More</a>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</li>--}}
-                {{--</ul>--}}
-            {{--</div>--}}
-            {{--<!-- End Flipster List -->--}}
-        {{--</div>--}}
+    {{--<div class="container">--}}
+    {{--<h5 class="title-w3ls">About</h5>--}}
+    {{--<div class="col-md-6 about-left-w3layouts">--}}
+    {{--<h6 class="sub"> Creative ideas for your fashion</h6>--}}
+    {{--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the--}}
+    {{--industry's standard dummy text ever since the 1500s, rds which don't look even slightly believable.--}}
+    {{--If--}}
+    {{--you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing--}}
+    {{--hidden in the middle of text.</p>--}}
+    {{--</div>--}}
+    {{--<div class="col-md-6 about-right-w3layouts">--}}
+    {{--<iframe src="https://player.vimeo.com/video/58238439"></iframe>--}}
+    {{--</div>--}}
+    {{--<div class="clearfix"></div>--}}
+    {{--<!-- Flipster List -->--}}
+    {{--<div class="flipster">--}}
+    {{--<ul>--}}
+    {{--<li>--}}
+    {{--<div class="about-grid-agile">--}}
+    {{--<div class="about-head-w3">--}}
+    {{--<h3>Products</h3>--}}
+    {{--</div>--}}
+    {{--<div class="about-bottom">--}}
+    {{--<div class="about-bottom-image">--}}
+    {{--<img src="images/about1.jpg" alt=" " class="img-responsive">--}}
+    {{--</div>--}}
+    {{--<div class="about-bottom-bottom">--}}
+    {{--<p>Cras id odio elit. Ut scelerisque pellentesque tortor, metus eu.</p>--}}
+    {{--<h5>$100</h5>--}}
+    {{--</div>--}}
+    {{--<div class="read-button">--}}
+    {{--<a href="#news" class="scroll">Read More</a>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</li>--}}
+    {{--<li>--}}
+    {{--<div class="about-grid-agile">--}}
+    {{--<div class="about-head-w3">--}}
+    {{--<h3>Services</h3>--}}
+    {{--</div>--}}
+    {{--<div class="about-bottom">--}}
+    {{--<div class="about-bottom-image">--}}
+    {{--<img src="images/about2.jpg" alt=" " class="img-responsive">--}}
+    {{--</div>--}}
+    {{--<div class="about-bottom-bottom">--}}
+    {{--<p>Cras id odio elit. Ut scelerisque pellentesque tortor, metus eu.</p>--}}
+    {{--<h5>$150</h5>--}}
+    {{--</div>--}}
+    {{--<div class="read-button">--}}
+    {{--<a href="#news" class="scroll">Read More</a>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</li>--}}
+    {{--<li>--}}
+    {{--<div class="about-grid-agile">--}}
+    {{--<div class="about-head-w3">--}}
+    {{--<h3>Services</h3>--}}
+    {{--</div>--}}
+    {{--<div class="about-bottom">--}}
+    {{--<div class="about-bottom-image">--}}
+    {{--<img src="images/about3.jpg" alt=" " class="img-responsive">--}}
+    {{--</div>--}}
+    {{--<div class="about-bottom-bottom">--}}
+    {{--<p>Cras id odio elit. Ut scelerisque pellentesque tortor, metus eu.</p>--}}
+    {{--<h5>$200</h5>--}}
+    {{--</div>--}}
+    {{--<div class="read-button">--}}
+    {{--<a href="#news" class="scroll">Read More</a>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</li>--}}
+    {{--</ul>--}}
+    {{--</div>--}}
+    {{--<!-- End Flipster List -->--}}
+    {{--</div>--}}
     {{--</div>--}}
     <!-- end about -->
     <!-- Right to left-->
@@ -193,14 +193,15 @@
                     <h6 class="sub">{{__('contact us')}}</h6>
                     <address>
                         <ul>
-                            <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> {{__('anddress')}}: Hà Nội
+                            <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                                {{__('anddress')}}: Hà Nội
                             </li>
-                            <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{__('telephone')}} : +1
-                                (958)
-                                123-3667
+                            <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                                {{__('telephone')}} : +1(958)123-3667
                             </li>
-                            <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> {{__('email')}} : <a
-                                        class="mail" href="mailto:mail@example.com">hoangduyib96@gmail.com</a></li>
+                            <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> {{__('email')}} :
+                                <a class="mail" href="mailto:mail@example.com">hoangduyib96@gmail.com</a>
+                            </li>
                         </ul>
                     </address>
                 </div>
@@ -242,8 +243,9 @@
                     <form action="#" method="post">
                         <input type="text" class="sub-email" value="Email" onfocus="this.value = '';"
                                onblur="if (this.value == '') {this.value = 'Email';}">
-                        <a href="#" role="button" class="submit"><span class="glyphicon glyphicon-menu-right arrow-rt"
-                                                                       aria-hidden="true"></span></a>
+                        <a href="#" role="button" class="submit">
+                            <span class="glyphicon glyphicon-menu-right arrow-rt" aria-hidden="true"></span>
+                        </a>
                     </form>
                 </div>
                 <ul class="social">
