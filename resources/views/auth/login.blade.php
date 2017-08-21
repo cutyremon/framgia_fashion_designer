@@ -60,12 +60,12 @@
                                     </div>
                                 </div>
                                 <p class="login button">
-                                    <input href="{{route('home')}}" type="submit" value="{{__('sign in')}}"/>
+                                    <input href="{{ route('home') }}" type="submit" value="{{__('sign in')}}"/>
                                     {{--<a href="http://cookingfoodsworld.blogspot.in/" target="_blank"></a>--}}
                                 </p>
                                 <p class="change_link">
                                     {{__('not a member yet ?')}}
-                                    <a href="{{route('register')}}" class="to_register">{{__('register')}}</a>
+                                    <a href="{{ route('register') }}" class="to_register">{{__('register')}}</a>
                                 </p>
 
                                 <div class="col-md-8 col-md-offset-1">
@@ -94,7 +94,4 @@
         </div>
     </div>
 @endsection
-@section('custom-css')
-    <link rel="stylesheet" type="text/css" media="all" href="css/custom-style.css">
-@endsection('custom-css')
 

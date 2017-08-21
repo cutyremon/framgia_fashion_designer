@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 
 @section('custom-css')
-    {{ Html::style('/css/custom-style.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
+    {{ Html::style('home-style.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
     {{ Html::style('/css/profile/style_profile.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
     {{ Html::style('/css/profile/custom-style_profile.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
 @endsection('custom-css')

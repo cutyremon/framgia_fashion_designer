@@ -1,7 +1,6 @@
 @extends('frontend.layouts.master')
 
 @section('custom-css')
-    {{ Html::style('/css/custom-style.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
     {{ Html::style('/css/category/category_style.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
 @endsection('custom-css')
 

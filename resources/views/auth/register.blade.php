@@ -1,4 +1,5 @@
 @extends('frontend.layouts.master')
+
 @section('content')
     <div class="body_v1">
         <div class="container">
@@ -83,7 +84,7 @@
 
                     <div class="form-group">
                         <p class="login button">
-                            <input href="{{route('login')}}" type="submit" value="{{__('register')}}"/>
+                            <input href="{{ route('login') }}" type="submit" value="{{__('register')}}"/>
 
                             {{--<a href="http://cookingfoodsworld.blogspot.in/" target="_blank"></a>--}}
                         </p>
@@ -99,6 +100,3 @@
     </div>
     </div>
 @endsection
-@section('custom-css')
-    <link rel="stylesheet" type="text/css" media="all" href="css/custom-style.css">
-@endsection('custom-css')

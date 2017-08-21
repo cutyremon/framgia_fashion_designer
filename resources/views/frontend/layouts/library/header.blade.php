@@ -1,4 +1,5 @@
 <!-- header -->
+{{ Html::style('/css/header/header-style.css', [ 'rel' => 'stylesheet', 'type' => 'text/css' ]) }}
 <div class="header">
     <nav class="navbar navbar-default">
         <div class="navbar-header fix-nav-header">
@@ -9,7 +10,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <h1><a href="#home"><span>F</span>ramgia <span>F</span>ashion </a></h1>
+            <h1><a href="{{ route('home') }}"><span>F</span>ramgia <span>F</span>ashion </a></h1>
         </div>
         <!-- navbar-header -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -29,12 +30,12 @@
                 <li><a href="#gallery" class="hvr-underline-from-center scroll">{{__('topic')}}</a></li>
                 <li><a href="#contact" class="hvr-underline-from-center scroll">{{__('contact us')}}</a></li>
                 @if (Auth::guest())
-                    <button class="btn btn-success navbar-btn fix-btn"><a href="{{route('login')}}">{{__('sign in')}}</a></button>
-                    <button class="btn btn-success navbar-btn fix-btn"><a href="{{route('register')}}">{{__('sign up')}}</a>
+                    <button class="btn btn-success navbar-btn fix-btn"><a href="{{ route('login') }}">{{__('sign in')}}</a></button>
+                    <button class="btn btn-success navbar-btn fix-btn"><a href="{{ route('register') }}">{{__('sign up')}}</a>
                     </button>
                 @else
                     <button class="btn btn-success navbar-btn fix-btn">{{__('welcome')}}:{{ Auth::User()->full_name}}</button>
-                    <button class="btn btn-success navbar-btn fix-btn"><a href="{{route('logout')}}">{{__('log out')}}</a></button>
+                    <button class="btn btn-success navbar-btn fix-btn"><a href="{{ route('logout') }}">{{__('logout')}}</a></button>
                 @endif
             </ul>
         </div>
