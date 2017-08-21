@@ -1,0 +1,36 @@
+/* Style homepage*/
+.carousel-inner > .item > img {
+    width: 100%;
+    height: 480px;
+    margin-top: 1px;
+}
+
+.gal-btm > .col-md-6 img {
+    width: 570px;
+    height: 305px;
+}
+
+.gal-btm > .col-md-4 img {
+    width: 380px;
+    height: 305px;
+}
+
+.team {
+    margin-top: -10px;
+}
+
+.team .container .title-w3ls {
+    margin-top: -140px;
+}
+.title-w3ls a {
+    color: #007ba4;
+    font-family: cursive;
+    font-size: larger;
+}
+.title-w3ls a:hover {
+    color: #a02e09;
+}
+.contact {
+    margin-top: -100px;
+}
+/* //Style homepage*/

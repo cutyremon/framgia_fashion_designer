@@ -10,7 +10,7 @@
     {{ Html::script('bower_components/ResponsiveSlides/responsiveslides.min.js') }}
     {{ Html::script('js/admin.js',['rel' => 'stylesheet','type' => 'text/javascript'])}}
     {{--    {{ Html::style('css/style_profile.css', ['rel' => 'stylesheet']) }}--}}
-    {{ Html::style('css/custom-style.css', ['rel' => 'stylesheet']) }}
+    {{ Html::style('home-style.css', ['rel' => 'stylesheet']) }}
     @include('frontend.layouts.library.javascrip')
 
 
@@ -697,7 +697,7 @@
     </div><!-- /.modal-dalog -->
 </div><!-- /.modal -->
 {{--@section('custom-css')--}}
-{{--<link rel="stylesheet" type="text/css" media="all" href="css/custom-style.css">--}}
+{{--<link rel="stylesheet" type="text/css" media="all" href="css/home-style.css">--}}
 {{--@endsection('custom-css')--}}
 </body>
 

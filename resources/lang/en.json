@@ -1,6 +1,7 @@
 {
   "laravel": "Laravel",
   "login": "Login",
+  "logout": "LogOut",
   "register": "Register",
   "doc": "Documentation",
   "new": "News",

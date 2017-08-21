@@ -7,6 +7,10 @@
 
 @section('title', 'Framgia Fashion')
 
+@section('custom-css')
+    {{ Html::style('/css/home/home-style.css', [ 'rel' => 'stylesheet', 'type' => 'text/css' ]) }}
+@endsection('custom-css')
+
 @section('content')
     <!-- banner -->
     <div class="banner" id="home">
@@ -156,7 +160,7 @@
     <div class="gallery" id="gallery">
         <!-- gallery -->
         <div class="container">
-            <h5 class="title-w3ls"><a href="#">{{__('topic')}}</a></h5>
+            <h5 class="title-w3ls"><a href="#">{{__('STYLE')}}</a></h5>
             <div class="gal-btm">
                 @for($i = 0; $i < count($styles); $i++)
                     <div class="{{ HelpText::stylesHome($i + 1) }}" data-wow-delay=".5s">
@@ -255,7 +259,3 @@
     <!-- end footer -->
 @endsection('footer')
 
-@section('custom-css')
-    <link rel="stylesheet" type="text/css" media="all" href="/css/custom-style.css">
-
-@endsection('custom-css')

@@ -10,7 +10,7 @@
 |
 */
 Route::group(['middleware' => 'localization'], function () {
-    Route::get('/', 'HomeController@home')->name('home');
+    Route::get('home', 'HomeController@home')->name('home');
     Route::get('stylist', function () {
         return view('frontend.stylist.stylistpage');
     });
