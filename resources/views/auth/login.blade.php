@@ -14,40 +14,31 @@
                         <h1>{{__('sign in')}}</h1>
                         <div class="panel-body">
                             {{--<form class="form-horizontal" method="POST" action="{{ route('login') }}">--}}
-                            <form class="form-horizontal" method="post" action="{{route('login')}}">
-                                {{ csrf_field() }}
-
+                            <form class="form-horizontal" method="post" action="{{route('login')}}">{{ csrf_field() }}
                                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                     {{--<label for="email" class="col-md-4 control-label">E-Mail Address</label>--}}
                                     <label for="email" class="username">{{__('your username')}}</label>
-
                                     {{--<div class="col-md-6">--}}
                                     <input id="email" type="text" riquered="riquered" name="email"
                                            placeholder="{{Config::get('app.email_defaultt')}}"/>
                                     @if ($errors->has('email'))
                                         <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
+                                    <strong>{{ $errors->first('email') }}</strong>
+                                </span>
                                     @endif
                                 </div>
-
-
                                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                     {{--<label for="password" class="col-md-4 control-label">Password</label>--}}
                                     <label for="password" class="youpassword"> {{__('your password')}} </label>
-
                                     {{--<div class="col-md-6">--}}
                                     <input id="password" type="password" name="password"
                                            required="required" placeholder="{{Config::get('app.password_defaultt')}}">
-
                                     @if ($errors->has('password'))
                                         <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
+                                    <strong>{{ $errors->first('password') }}</strong>
+                                </span>
                                     @endif
                                 </div>
-
-
                                 <div class="form-group">
                                     <div class="col-md-6 col-md-offset-4">
                                         <div class="checkbox">
@@ -67,7 +58,6 @@
                                     {{__('not a member yet ?')}}
                                     <a href="{{ route('register') }}" class="to_register">{{__('register')}}</a>
                                 </p>
-
                                 <div class="col-md-8 col-md-offset-1">
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{__('forgot your password')}}
@@ -86,7 +76,6 @@
                                 {{--</div>--}}
                             </form>
                         </div>
-
                         {{--</form>--}}
                     </div>
                 </div>

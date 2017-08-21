@@ -3,6 +3,7 @@
     position: relative;
     padding: 1em 0 0em 0;
     background: url(../../images/header.jpg);
+    z-index: 1;
 }
 
 ul.nav.navbar-nav.navbar-right.fix-navbar-right {
@@ -15,5 +16,62 @@ ul.nav.navbar-nav.navbar-right.fix-navbar-right {
 
 .fix-nav-header {
     margin-left: 3%;
+}
+
+.collapse .navbar-right .account {
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+#header-account {
+    display: none;
+    /*visibility: hidden;*/
+    top: 60px;
+    left: -30px;
+    right: 0px;
+    padding: 10px 65px 10px 20px;
+    border: 1px solid #ccc;
+    z-index: 10;
+    background-color: #fff;
+    position: absolute;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+.account:hover #header-account {
+    display: block;
+}
+
+.links {
+    width: 200%;
+    font-size: large;
+    font-family: cursive;
+}
+
+.account img {
+    height: 40px;
+    width: 40px;
+    border-radius: 2em;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.collapse .navbar-right .nar-user {
+    margin-top: 15px;
+}
+
+.account {
+    border-radius: 10px;
+    position: relative;
+    height: 60px;
+    width: 175px;
+}
+
+.account:hover {
+    background-color: white;
+}
+
+.navbar-collapse .account .acc-user {
+    margin-top: 5px;
 }
 /* //Style header*/
