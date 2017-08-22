@@ -25,6 +25,8 @@ class Topic_Style extends Model
      */
     protected $fillable = [
         'id',
+        'style_id',
+        'topic_id'
     ];
     /**
      * The attributes that are mass assignable.

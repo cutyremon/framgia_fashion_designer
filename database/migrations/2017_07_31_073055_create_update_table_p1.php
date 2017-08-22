@@ -13,22 +13,22 @@ class CreateUpdateTableP1 extends Migration
      */
     public function up()
     {
-        Schema::table('users', function(Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             $table->string('avatar', 255)->nullable();
             $table->string('phone', 100)->nullable();
             $table->integer('role')->default(0)->change();
             $table->string('description', 255)->nullable();
             $table->string('name_display', 255)->nullable();
         });
-        Schema::table('styles', function(Blueprint $table) {
+        Schema::table('styles', function (Blueprint $table) {
             $table->string('image', 255)->nullable();
             $table->string('tittle', 255)->change();
             $table->renameColumn('descritpion', 'description');
         });
-        Schema::table('produces', function(Blueprint $table) {
+        Schema::table('produces', function (Blueprint $table) {
             $table->string('image', 255)->nullable();
         });
-        Schema::table('topics', function(Blueprint $table) {
+        Schema::table('topics', function (Blueprint $table) {
             $table->string('image', 255)->nullable();
             $table->string('description', 255)->nullable();
         });
@@ -42,5 +42,9 @@ class CreateUpdateTableP1 extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('users');
+        Schema::dropIfExists('styles');
+        Schema::dropIfExists('produces');
+        Schema::dropIfExists('topics');
     }
 }

@@ -25,6 +25,9 @@ class Rate extends Model
      */
     protected $fillable = [
         'id',
+        'user_id',
+        'costume_id',
+        'point'
     ];
     /**
      * The attributes that are mass assignable.

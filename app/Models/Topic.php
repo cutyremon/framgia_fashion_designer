@@ -27,8 +27,7 @@ class Topic extends Model
         'id',
         'topic_name',
         'image',
-        'description'
-
+        'description',
     ];
     /**
      * The attributes that are mass assignable.
@@ -39,8 +38,16 @@ class Topic extends Model
         'create_at',
         'delete_at',
     ];
-    function topic_style() {
-    	return $this->hasMany(Topic_Style::class);
+
+    function topic_style()
+    {
+        return $this->hasMany(Topic_Style::class);
     }
+    
+    function style()
+    {
+        return $this->hasMany(Style::class);
+    }
+
 }
 

@@ -25,6 +25,11 @@ class Requested_Produce extends Model
      */
     protected $fillable = [
         'id',
+        'user_id',
+        'category_id',
+        'produce_name',
+        'price',
+        'description'
     ];
     /**
      * The attributes that are mass assignable.

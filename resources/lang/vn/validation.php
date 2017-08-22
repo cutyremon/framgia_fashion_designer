@@ -29,7 +29,6 @@ return [
         'string'  => 'Thuộc tính: phải nằm trong khoảng: min và: max characters.',
         'array'   => 'Thuộc tính: phải có từ: min đến: max items.',
     ],
-
     'boolean'              => 'Trường thuộc tính: phải là đúng hoặc sai.',
     'confirmed'            => 'xác nhận thuộc tính không khớp.',
     'date'                 => 'Thuộc tính: không phải là ngày hợp lệ.',
