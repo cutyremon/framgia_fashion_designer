@@ -41,28 +41,53 @@
                     </button>
                 @else
                     <li class="account">
-                        <a href="{{ route('profile') }}" class="acc-user">
-                            @if (Auth::User()->avatar)
-                                <img src="{!! asset(Auth::User()->avatar) !!}" class="user-image">
-                            @else
-                                <img src="{!! asset('images/avatar.png') !!}" class="user-image">
-                            @endif
-                            <span class="hidden-xs">{!! Auth::User()->full_name !!}</span>
-                            <div id="header-account" class="skip-content skip-active">
-                                <div class="links">
-                                    <ul>
-                                        <li>
-                                            <a href="{{ route('profile') }}" class="top-link-blog">
-                                                {{ __('my profile') }}
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('logout') }}">{{ __('logout') }}</a>
-                                        </li>
-                                    </ul>
+                        @if(Auth::User()->role == 0)
+                            <a href="{{ route('profile') }}" class="acc-user">
+                                @if (Auth::User()->avatar)
+                                    <img src="{!! asset(Auth::User()->avatar) !!}" class="user-image">
+                                @else
+                                    <img src="{!! asset('images/avatar.png') !!}" class="user-image">
+                                @endif
+                                <span class="hidden-xs">{!! Auth::User()->full_name !!}</span>
+                                <div id="header-account" class="skip-content skip-active">
+                                    <div class="links">
+                                        <ul>
+                                            <li>
+                                                <a href="{{ route('profile') }}" class="top-link-blog">
+                                                    {{ __('my profile') }}
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('logout') }}">{{ __('logout') }}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        @else
+                            <a href="{{ route('admin') }}" class="acc-user">
+                                @if (Auth::User()->avatar)
+                                    <img src="{!! asset(Auth::User()->avatar) !!}" class="user-image">
+                                @else
+                                    <img src="{!! asset('images/avatar.png') !!}" class="user-image">
+                                @endif
+                                <span class="hidden-xs">{!! Auth::User()->full_name !!}</span>
+                                <div id="header-account" class="skip-content skip-active">
+                                    <div class="links">
+                                        <ul>
+                                            <li>
+                                                <a href="{{ route('admin') }}" class="top-link-blog">
+                                                    {{ __('management page') }}
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('logout') }}">{{ __('logout') }}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        @endif
                     </li>
                 @endif
             </ul>

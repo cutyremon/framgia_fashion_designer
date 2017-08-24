@@ -3,7 +3,7 @@
     position: relative;
     padding: 1em 0 0em 0;
     background: url(../../images/header.jpg);
-    z-index: 1;
+    z-index: 10;
 }
 
 ul.nav.navbar-nav.navbar-right.fix-navbar-right {
