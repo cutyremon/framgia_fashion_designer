@@ -14,9 +14,9 @@ Route::group(['middleware' => 'localization'], function () {
     Route::get('stylist', function () {
         return view('frontend.stylist.stylistpage');
     });
-    Route::get('style', function () {
-        return view('frontend.style.stylepage');
-    });
+    Route::get('style', 'Frontend\StyleController@getStyle')->name('getStyle');
+    Route::get('topic/{topic_style}', 'Frontend\Topic_StyleController@getTopicStyle')->name('topic');
+
     Auth::routes();
 
     Route::get('logout', 'LogoutController@logout')->name('logout');

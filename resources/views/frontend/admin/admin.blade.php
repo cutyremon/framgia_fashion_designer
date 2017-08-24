@@ -78,7 +78,7 @@
                                 <i class="glyphicon glyphicon-pencil">
                                 </i>
                                 <i class="btn btn-primary view-pdf" data-toggle="modal"
-                               data-target="#per-info">Style
+                                   data-target="#per-info">Style
                                 </i>
                                 {{--<i class="fa fa-pencil" aria-hidden="true"></i>)--}}
                             </a>
@@ -137,7 +137,7 @@
                                 <i class="glyphicon glyphicon-pencil">
                                 </i>
                                 <i class="btn btn-primary view-pdf" data-toggle="modal"
-                               data-target="#per-info_2">Produces
+                                   data-target="#per-info_2">Produces
                                 </i>
                                 {{--<i class="fa fa-pencil" aria-hidden="true"></i>)--}}
                             </a>
@@ -204,7 +204,7 @@
                                 <i class="glyphicon glyphicon-pencil">
                                 </i>
                                 <i class="btn btn-primary view-pdf" data-toggle="modal"
-                               data-target="#per-info_1">Topic
+                                   data-target="#per-info_1">Topic
                                 </i>
                                 {{--<i class="fa fa-pencil" aria-hidden="true"></i>)--}}
                             </a>
@@ -228,33 +228,8 @@
                                                         <input class="form-control " type="text"
                                                                name="topic_name"
                                                                placeholder="name topic">
-                                                        {{--@if ($errors->has('topic_name'))--}}
-                                                        {{--<span class="help-block">--}}
-                                                        {{--<strong>{{ $errors->first('full_name') }}</strong>--}}
-                                                        {{--</span>--}}
-                                                        {{--@endif--}}
                                                     </div>
-                                                    {{--<div class="form-group col-md-6 col-xs-12">--}}
-                                                    {{--<label for="gender">Giới tính</label>--}}
-                                                    {{--<select class="form-control" id="gender">--}}
-                                                    {{--<option value="male">Nam</option>--}}
-                                                    {{--<option value="female">Nữ</option>--}}
-                                                    {{--<option value="orther">Khác</option>--}}
-                                                    {{--</select>--}}
-                                                    {{--</div>--}}
                                                 </div>
-                                                {{--<div class="row">--}}
-                                                {{--<div class="form-group col-md-8 ">--}}
-                                                {{--<label for="date_of_birth">Ngày Sinh</label>--}}
-                                                {{--<input class="form-control date_of_birth" type="date"--}}
-                                                {{--id="date_of_birth">--}}
-                                                {{--</div>--}}
-                                                {{--<div class="form-group col-md-6 col-xs-12">--}}
-                                                {{--<label for="phone">Điện Thoại</label>--}}
-                                                {{--<input class="form-control phone" type="text" id="phone"--}}
-                                                {{--placeholder="phone">--}}
-                                                {{--</div>--}}
-                                                {{--</div>--}}
                                                 <div class="row">
                                                     <div class="form-group col-md-8">
                                                         <label for="image">Image</label>
@@ -263,19 +238,6 @@
                                                         >
                                                     </div>
                                                 </div>
-                                                {{--<div class="form-group col-md-6 col-xs-12">--}}
-                                                {{--<label for="nationality">Quốc Tịch</label>--}}
-                                                {{--<input class="form-control" type="text" id="nationality"--}}
-                                                {{--placeholder="Vietnamese">--}}
-                                                {{--</div>--}}
-                                                {{--</div>--}}
-                                                {{--<div class="row">--}}
-                                                {{--<div class="form-group col-md-8">--}}
-                                                {{--<label for="email">Email</label>--}}
-                                                {{--<input class="form-control" type="email" id="email"--}}
-                                                {{--placeholder="example@gmail.com">--}}
-                                                {{--</div>--}}
-                                                {{--</div>--}}
                                                 <div class="row">
                                                     <div class="form-group col-md-8">
                                                         <label for="description">Mô Tả</label>
@@ -301,11 +263,11 @@
                             <a>
                                 <i class="glyphicon glyphicon-pencil"></i>
                                 <i class="btn btn-primary view-pdf" data-toggle="modal"
-                               data-target="#per-info_3">Role
+                                   data-target="#per-info_3">Role
                                 </i>
                                 {{--<i class="fa fa-pencil" aria-hidden="true"></i>)--}}
                             </a>
-                            
+
                         </li>
                         <li><a href="{{route('logout')}}"><i class="glyphicon glyphicon-off"></i>
                                 <i class="btn btn-primary view-pdf">

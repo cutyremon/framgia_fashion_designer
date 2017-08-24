@@ -26,6 +26,13 @@ class Produces extends Model
      */
     protected $fillable = [
         'id',
+        'category_id',
+        'produce_name',
+        'price',
+        'description',
+        'image',
+        'color',
+        'gender'
     ];
     /**
      * The attributes that are mass assignable.

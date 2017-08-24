@@ -25,6 +25,10 @@ class Costume extends Model
      */
     protected $fillable = [
         'id',
+        'user_id',
+        'style_id',
+        'average_point',
+        'description'
     ];
     /**
      * The attributes that are mass assignable.

@@ -45,6 +45,10 @@ $(document).ready(function () {
         $("li").removeClass("active");
         $(this).addClass("active");
     });
+    $('#topicList').on('click', function () {
+        $("a").remoteClass("active");
+        $(this).addClass("active");
+    });
 
     $(document).on('click', '#page-paginate .pagination a', function (e) {
         search(this.text);

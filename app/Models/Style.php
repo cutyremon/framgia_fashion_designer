@@ -25,6 +25,11 @@ class Style extends Model
      */
     protected $fillable = [
         'id',
+        'tittle',
+        'description',
+        'image',
+        'topic_id'
+
     ];
     /**
      * The attributes that are mass assignable.
@@ -35,11 +40,24 @@ class Style extends Model
         'create_at',
         'delete_at',
     ];
-    function costume_sytle() {
-    	return $this->hasMany(Costume_Style::class);
+
+    function costume()
+    {
+        return $this->hasMany(Costume::class);
     }
 
-    function topic_style() {
-    	return $this->hasMany(Topic_Style::class);
+    function topic()
+    {
+        return $this->hasMany(Topic::class);
+    }
+
+    function costume_sytle()
+    {
+        return $this->hasMany(Costume_Style::class);
+    }
+
+    function topic_style()
+    {
+        return $this->hasMany(Topic_Style::class);
     }
 }

@@ -1,267 +1,149 @@
 @extends('frontend.layouts.master')
-
-@section('content')
-<!-- sytle -->
-    <div class="gallery" id="gallery">
-        <!-- gallery -->
-        <div class="container">
-            <h5 class="title-w3ls"><a href="#">{{__('style')}}</a></h5>
-            <div class="gal-btm">
-                <div class="col-md-4 gal-gd wow fadeInLeft animated" data-wow-delay=".5s">
-                    <a href="#image-1">
-                        <div class="nd-wrap nd-style-8">
-                            <img src="images/g1.jpg" class="img-responsive" alt=" "/>
-                            <div class="nd-content">
-                                <div class="nd-content_inner">
-                                    <div class="nd-content_inner1">
-                                        <h4 class="nd-title">Gallery</h4>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-link"></i>
-                                        </span>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-search"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 gal-gd wow fadeInUp animated" data-wow-delay=".5s">
-                    <a href="#image-2">
-                        <div class="nd-wrap nd-style-8">
-                            <img src="images/g2.jpg" class="img-responsive" alt=" "/>
-                            <div class="nd-content">
-                                <div class="nd-content_inner">
-                                    <div class="nd-content_inner1">
-                                        <h4 class="nd-title">Gallery</h4>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-link"></i>
-                                        </span>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-search"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 gal-gd wow fadeInRight animated" data-wow-delay=".5s">
-                    <a href="#image-3">
-                        <div class="nd-wrap nd-style-8">
-                            <img src="images/g3.jpg" class="img-responsive" alt=" "/>
-                            <div class="nd-content">
-                                <div class="nd-content_inner">
-                                    <div class="nd-content_inner1">
-                                        <h4 class="nd-title">Gallery</h4>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-link"></i>
-                                        </span>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-search"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 gal-gd-sec wow fadeInLeft animated" data-wow-delay=".5s">
-                    <a href="#image-4">
-                        <div class="nd-wrap nd-style-8">
-                            <img src="images/g4.jpg" class="img-responsive" alt=" "/>
-                            <div class="nd-content">
-                                <div class="nd-content_inner">
-                                    <div class="nd-content_inner1">
-                                        <h4 class="nd-title">Gallery</h4>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-link"></i>
-                                        </span>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-search"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 gal-gd-sec wow fadeInRight animated" data-wow-delay=".5s">
-                    <a href="#image-5">
-                        <div class="nd-wrap nd-style-8">
-                            <img src="images/g5.jpg" class="img-responsive" alt=" "/>
-                            <div class="nd-content">
-                                <div class="nd-content_inner">
-                                    <div class="nd-content_inner1">
-                                        <h4 class="nd-title">Gallery</h4>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-link"></i>
-                                        </span>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-search"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 gal-gd wow fadeInLeft animated" data-wow-delay=".5s">
-                    <a href="#image-6">
-                        <div class="nd-wrap nd-style-8">
-                            <img src="images/g6.jpg" class="img-responsive" alt=" "/>
-                            <div class="nd-content">
-                                <div class="nd-content_inner">
-                                    <div class="nd-content_inner1">
-                                        <h4 class="nd-title">Gallery</h4>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-link"></i>
-                                        </span>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-search"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 gal-gd wow fadeInDown animated" data-wow-delay=".5s">
-                    <a href="#image-7">
-                        <div class="nd-wrap nd-style-8">
-                            <img src="images/g7.jpg" class="img-responsive" alt=" "/>
-                            <div class="nd-content">
-                                <div class="nd-content_inner">
-                                    <div class="nd-content_inner1">
-                                        <h4 class="nd-title">Gallery</h4>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-link"></i>
-                                        </span>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-search"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 gal-gd wow fadeInRight animated" data-wow-delay=".5s">
-                    <a href="#image-8">
-                        <div class="nd-wrap nd-style-8">
-                            <img src="images/g8.jpg" class="img-responsive" alt=" "/>
-                            <div class="nd-content">
-                                <div class="nd-content_inner">
-                                    <div class="nd-content_inner1">
-                                        <h4 class="nd-title">Gallery</h4>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-link"></i>
-                                        </span>
-                                        <span class="nd-icon">
-                                            <i class="glyphicon glyphicon-search"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-    <div class="lb-overlay" id="image-1">
-        <img src="images/g1.jpg" alt="image1"/>
-        <div class="gal-info">
-            <h3>Gallery</h3>
-            <p>Neque porro quisquam est, qui dolorem ipsum
-                quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut
-                labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-        <a href="index.html" class="lb-close">Close</a>
-    </div>
-    <div class="lb-overlay" id="image-2">
-        <img src="images/g2.jpg" alt="image1"/>
-        <div class="gal-info">
-            <h3>Gallery</h3>
-            <p>Neque porro quisquam est, qui dolorem ipsum
-                quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut
-                labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-        <a href="index.html" class="lb-close">Close</a>
-    </div>
-    <div class="lb-overlay" id="image-3">
-        <img src="images/g3.jpg" alt="image1"/>
-        <div class="gal-info">
-            <h3>Gallery</h3>
-            <p>Neque porro quisquam est, qui dolorem ipsum
-                    quia dolor sit amet, consectetur, adipisci velit,
-                    sed quia non numquam eius modi tempora incidunt ut
-                    labore et dolore magnam aliquam quaerat voluptatem.</p>
-            </div>
-            <a href="index.html" class="lb-close">Close</a>
-    </div>
-    <div class="lb-overlay" id="image-4">
-        <img src="images/g4.jpg" alt="image1"/>
-        <div class="gal-info">
-            <h3>Gallery</h3>
-            <p>Neque porro quisquam est, qui dolorem ipsum
-                        quia dolor sit amet, consectetur, adipisci velit,
-                        sed quia non numquam eius modi tempora incidunt ut
-                        labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-        <a href="index.html" class="lb-close">Close</a>
-    </div>
-    <div class="lb-overlay" id="image-5">
-        <img src="images/g5.jpg" alt="image1"/>
-        <div class="gal-info">
-            <h3>Gallery</h3>
-            <p>Neque porro quisquam est, qui dolorem ipsum
-                quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut
-                labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-        <a href="index.html" class="lb-close">Close</a>
-    </div>
-    <div class="lb-overlay" id="image-6">
-        <img src="images/g6.jpg" alt="image1"/>
-        <div class="gal-info">
-            <h3>Gallery</h3>
-            <p>Neque porro quisquam est, qui dolorem ipsum
-                quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut
-                labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-        <a href="index.html" class="lb-close">Close</a>
-    </div>
-    <div class="lb-overlay" id="image-7">
-        <img src="images/g7.jpg" alt="image1"/>
-        <div class="gal-info">
-            <h3>Gallery</h3>
-            <p>Neque porro quisquam est, qui dolorem ipsum
-                quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut
-                labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-        <a href="index.html" class="lb-close">Close</a>
-    </div>
-    <div class="lb-overlay" id="image-8">
-        <img src="images/g8.jpg" alt="image1"/>
-        <div class="gal-info">
-            <h3>Gallery</h3>
-            <p>Neque porro quisquam est, qui dolorem ipsum
-                quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut
-                labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-        <a href="index.html" class="lb-close">Close</a>
-    </div>
-<!-- end style -->
-@endsection('content')
-
 @section('custom-css')
+    {{ Html::style('/css/category/category_style.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
     <link rel="stylesheet" type="text/css" media="all" href="css/custom-style.css">
+    {{ Html::style('/css/topic_style/topic_style.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
+    {{ Html::script('js/admin.js',['rel' => 'stylesheet','type' => 'text/javascript'])}}
+    {{ Html::script('bower_components/jquery/dist/jquery.min.js', ['type' => 'text/javascript']) }}
+    {{ Html::script('bower_components/ResponsiveSlides/responsiveslides.min.js') }}
 @endsection('custom-css')
+@section('content')
+    <div class="container">
+
+
+    </div>
+    <div class="container font-cate">
+        <div class="row rowfull">
+            <aside class="main-sidebar">
+            <div class="col-md-2 col-sm-4 wrap-sidebar">
+                <div class="font_stylist">
+                    <div class="row">
+
+                        <div class="search">
+                            <div class="row ">
+                                <div class="rowfullstyle">
+                                    <a href="#" data-toggle="collapse" data-target="#menu">
+                                        <h3 class="fontstyle-size">
+                                            <i class="glyphicon glyphicon-th-list"></i>
+                                            {{__('All Style')}}
+
+                                        </h3>
+
+                                    </a>
+                                </div>
+
+                            </div>
+                            <hr>
+
+                            <div class="collapse lisstyle-font" id="menu">
+                                <ul class="cate-list">
+                                    <li class="fa style-font"><a href="#" data-toggle="collapse" data-target="#menu2"><i
+                                                    class="glyphicon glyphicon-home"></i>
+                                            {{__('all style')}} <i class=" glyphicon glyphicon-chevron-right"></i>
+
+                                            <span
+                                                    class="badge badge-info">4 </span>
+                                        </a>
+                                        <div class="row">
+                                            <ul class="collapse lisstyle-font" id="menu2">
+                                                @foreach($new_style as $new_style_1)
+                                                    <li class="fa style-font">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        <span class="container-color-3">{{$new_style_1->tittle}}</span>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+
+                                        </div>
+                                    </li>
+
+                                    <li class="fa style-font"><i class="glyphicon glyphicon-home"></i>
+                                        {{__('new style')}} <i class=" glyphicon glyphicon-chevron-right"></i>
+                                        <span
+                                                class="badge badge-info">4 </span>
+                                    </li>
+
+                                    <li class="fa style-font"><i class="glyphicon glyphicon-star-empty"></i>
+                                        {{__('style hot')}}
+                                        <i class=" glyphicon glyphicon-chevron-right"></i>
+                                        <span
+                                                class="badge badge-info">5</span>
+                                    </li>
+                                    <li class="fa style-font"><i class="glyphicon glyphicon-thumbs-up"></i>
+                                        {{__('your style')}}
+                                        <i class=" glyphicon glyphicon-chevron-right"></i>
+                                        <span
+
+                                                class="badge badge-info">0</span>
+
+                                    </li>
+                                    <li class="fa style-font"><i class="glyphicon glyphicon-plus-sign"></i>
+                                        {{__('create style')}}
+                                        <i class=" glyphicon glyphicon-chevron-right"></i>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </aside>
+            <div class="col-md-9 col-sm-8">
+                <div class="row">
+                    <nav class="navbar navbar-inverse nar-cate">
+                        <div class="container-fluid container-color">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a>
+                                        {{__('all')}}
+                                    </a>
+                                </li>
+                                @foreach($new_topic as $newss)
+                                    <li>
+                                        <a class="container-color-2"
+                                           href="{{ route('topic', [ 'topic_style' => $newss->id ]) }}">
+                                            {!! $newss->topic_name !!}
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                {{--<div class="clearfix"></div>--}}
+
+                <div class="row">
+                    @foreach($new_style as $new)
+                        <div class="col-md-4 gal-gd wow fadeInLeft animated" data-wow-delay=".5s">
+                            <a>
+                                <div class="nd-wrap nd-style-8">
+                                    <img src="{{$new->image}}" class="img-responsive" alt=" "/>
+                                    <div class="nd-content">
+                                        <div class="nd-content_inner">
+                                            <div class="nd-content_inner1">
+                                                <h4 class="nd-title">{{$new->tittle}}</h4>
+                                                <span class="nd-icon">
+                                            <i class="glyphicon glyphicon-link">S</i>
+                                        </span>
+                                                <span class="nd-icon">
+                                            <i class="glyphicon glyphicon-search"></i>
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+
+        </div>
+    </div>
+@endsection('content')
+@section('script')
+    {{ Html::script('/js/search.js', ['type' => 'text/javascript']) }}
+@endsection('script')
+
