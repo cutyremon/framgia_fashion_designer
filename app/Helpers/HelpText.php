@@ -79,11 +79,13 @@ class HelpText
 
 
         self::setLanguage($language);
-
-
-//        return redirect()->back();
     }
 
-
+    public static function deleteFile($path)
+    {
+        if (is_file($path)) {
+            unlink($path);
+        }
+    }
 }
 
