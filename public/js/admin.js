@@ -8,5 +8,7 @@ $('[data-toggle=collapse]').click(function(){
 $('[data-toggle=collapse ]').click(function(){
     // toggle icon
     $(this).find("i").toggleClass("glyphicon-chevron-right");
+
 });
+$('#colorselector').colorselector();
 

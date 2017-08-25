@@ -7,7 +7,7 @@
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
-|
+
 */
 Route::group(['middleware' => 'localization'], function () {
     Route::get('home', 'HomeController@home')->name('home');
@@ -35,7 +35,6 @@ Route::group(['middleware' => 'localization'], function () {
     Route::get('category/{pro}', 'CategoryController@category')->name('category');
     Route::post('search', 'SearchController@allSearch')->name('search');
 
-
 });
 Route::post('/user/edit/upload', 'UserProfileController@showUploadAvatar')
     ->name('upload.avatar');
@@ -45,4 +44,3 @@ Route::post('/user/edit/password', 'UserProfileController@changePasswordUser')
     ->name('change.password');
 Route::get('/user/design', 'DesignCostumeController@designCostume')->name('user.design');
 Route::get('style/{idTopic}', 'AjaxController@ajaxStyle');
-

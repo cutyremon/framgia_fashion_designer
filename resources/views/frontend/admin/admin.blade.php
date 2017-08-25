@@ -17,7 +17,7 @@
 </head>
 <body>
 @php
-    $error=array();
+    $error = array();
 @endphp
 
 <!--header-->
@@ -84,13 +84,14 @@
                             </a>
                             <div id="per-info" class="modal fade" role="dialog">
                                 <div class="modal-dialog">
-                                    <div class="modal-content form-edit">
+                                    <div class="modal-content form-edit admin_form_v2">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal">&times;
                                             </button>
                                             <h4 class="modal-title">Them style</h4>
                                         </div>
-                                        <form class="form-horizontal" action="{{ route('postStyle') }}" method="post">
+                                        <form class="form-horizontal" action="{{ route('postStyle') }}" method="post"
+                                              enctype="multipart/form-data">
                                             {{csrf_field()}}
                                             <div class="modal-body">
                                                 <div class="row">
@@ -151,9 +152,10 @@
                                             <h4 class="modal-title">Thêm Produces</h4>
                                         </div>
                                         <form class="form-horizontal" action="{{ route('postProduce') }}"
-                                              method="POST">
+                                              method="POST" enctype="multipart/form-data">
                                             {{ csrf_field() }}
                                             <div class="modal-body ">
+
 
                                                 <div class="row">
                                                     <div class="form-group col-md-8">
@@ -162,6 +164,15 @@
                                                                name="produce_name"
                                                                placeholder="name produce">
                                                     </div>
+                                                    <div class="form-group col-md-3">
+                                                        <label for="category_id">{{__('categories')}}</label>
+                                                        <select id="category_id" name="category_id">
+                                                            @foreach($categories as $category)
+                                                                <option value="{{($category->id)}}">{{$category->category_name}}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+
                                                 </div>
                                                 <div class="row">
                                                     <div class="form-group col-md-8">
@@ -184,13 +195,65 @@
                                                                   id="description" name="description"></textarea>
                                                     </div>
                                                 </div>
+                                                <div class="row">
+                                                    <div class="form-group col-md-8">
+                                                        <label for="color">Color</label>
+                                                        <select id="color" name="color">
+                                                            <option value="Black"
+                                                                    class="admin_black"
+                                                            >Black
+                                                            </option>
+                                                            <option value="Blue" class="admin_blue"
+                                                                    selected="selected">Blue
+                                                            </option>
+                                                            <option value="Red"
+                                                                    class="admin_red">Red
+                                                            </option>
+                                                            <option value="White"
+                                                                    class="admin_white">White
+                                                            </option>
 
-                                            </div>
-                                            <div class="modal-footer">
-                                                <input type="submit" class="btn btn-default" value="Add Produce"/>
-                                                {{--<button type="submit" class="btn btn-default" data-dismiss="modal">Add--}}
-                                                {{--Topic--}}
-                                                {{--</button>--}}
+                                                        </select>
+                                                    </div>
+                                                    {{--</div>--}}
+                                                    {{--<div class="row"    >--}}
+                                                    <div class="form-group col-md-3" class="admin_form_1">
+
+                                                        <label for="gender">{{__('gender')}}</label>
+                                                        <select id="gender" name="gender">
+                                                            <option value="male">
+                                                                {{__('male')}}
+                                                            </option>
+                                                            <option value="female">
+                                                                {{__('female')}}
+                                                            </option>
+
+                                                        </select>
+                                                        {{--<div class="controls">--}}
+                                                        {{--<label class="radio inline" for="gender-0">--}}
+                                                        {{--<input name="gender" id="gender-0" value="Male"--}}
+                                                        {{--checked="checked" type="radio">--}}
+                                                        {{--Male--}}
+                                                        {{--</label>--}}
+                                                        {{--<label class="radio inline" for="gender-1">--}}
+                                                        {{--<input name="gender" id="gender-1" value="Female"--}}
+                                                        {{--type="radio">--}}
+                                                        {{--Female--}}
+                                                        {{--</label>--}}
+
+
+                                                        {{--</div>--}}
+
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <input type="submit" class="btn btn-default" value="Add Produce"/>
+                                                    {{--<button type="submit" class="btn btn-default" data-dismiss="modal">Add--}}
+                                                    {{--Topic--}}
+                                                    {{--</button>--}}
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
@@ -218,7 +281,7 @@
                                             <h4 class="modal-title">Thêm topic</h4>
                                         </div>
                                         <form class="form-horizontal" action="{{ route('postTopic') }}"
-                                              method="POST">
+                                              method="POST" enctype="multipart/form-data">
                                             {{ csrf_field() }}
                                             <div class="modal-body ">
 

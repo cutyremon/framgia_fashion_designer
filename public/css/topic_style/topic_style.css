@@ -4,7 +4,7 @@
 
 .topic_style_float {
     float: left;
-    color:#f1c40f;
+    color: #f1c40f;
     font-size: 100%;
 }
 
@@ -12,44 +12,79 @@
     margin-top: 23px;
     margin-left: 109px;
 }
-.font-cate .fontstyle{
-    color:#1da1f2;
+
+.font-cate .fontstyle {
+    color: #1da1f2;
     font-size: 247%;
 }
-.font-cate .rowfull{
-    background-color:honeydew;
+
+.font-cate .rowfull {
+    background-color: honeydew;
 }
-.font-cate .rowfull .rowfullstyle{
+
+.font-cate .rowfull .rowfullstyle {
     margin-top: 2px;
     margin-left: 49px;
 }
-.font-cate .rowfull .fontstyle-size{
-    font-size:3vh !important;
-    color:black !important;
+
+.font-cate .rowfull .fontstyle-size {
+    font-size: 3vh !important;
+    color: black !important;
 }
-.font-cate .rowfull .lisstyle-font{
+
+.font-cate .rowfull .lisstyle-font {
     margin-left: 68px;
-    margin-top:35px;
+    margin-top: 35px;
 }
-.font-cate .rowfull .style-font{
+
+.font-cate .rowfull .style-font {
     font-size: 18px !important;
     display: block;
     margin-top: 14px;
-    text-align:left;
+    text-align: left;
 }
-.font-cate .rowfull .style-round{
+
+.font-cate .rowfull .style-round {
     width: 30px;
     border-radius: 15px;
 }
-.font-cate .rowfull .container-color{
-    background-color:#888a85;
+
+.font-cate .rowfull .container-color {
+    background-color: #888a85;
 }
-.font-cate .rowfull .container-color-2{
-    color:white;
+
+.font-cate .rowfull .container-color-2 {
+    color: white;
 }
-.font_stylist
-{
+
+.font_stylist {
     height: 600px;
     margin-top: 10px;
     width: 200px;
+}
+
+.font_topic_style {
+    margin-bottom: 22px;
+    height: 352px;
+    width: 306px;
+    background-color: #fff;
+}
+
+.font_check {
+    margin-left: 154px;
+    margin-top: 8px;
+}
+
+.font_check_1 {
+    display: flex;
+    margin-top: 25px;
+}
+
+.font_check_2 {
+    color: lawngreen;
+}
+
+.topic_style_form2 {
+    height: 260px;
+    width: 302px;
 }

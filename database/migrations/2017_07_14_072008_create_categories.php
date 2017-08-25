@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRate extends Migration
+class CreateCategories extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,10 @@ class CreateRate extends Migration
      */
     public function up()
     {
-        Schema::create('rate', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id')->unsigned();
-            $table->integer('costume_id')->unsigned();
-            $table->integer('point');
+            $table->string('category_name');
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('costume_id')->references('id')->on('costumes');
         });
     }
     /**
@@ -30,6 +26,6 @@ class CreateRate extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rate');
+        Schema::dropIfExists('categories');
     }
 }
