@@ -28,8 +28,6 @@ class Style extends Model
         'tittle',
         'description',
         'image',
-        'topic_id'
-
     ];
     /**
      * The attributes that are mass assignable.
@@ -40,16 +38,6 @@ class Style extends Model
         'create_at',
         'delete_at',
     ];
-
-    function costume()
-    {
-        return $this->hasMany(Costume::class);
-    }
-
-    function topic()
-    {
-        return $this->hasMany(Topic::class);
-    }
 
     function costume_sytle()
     {

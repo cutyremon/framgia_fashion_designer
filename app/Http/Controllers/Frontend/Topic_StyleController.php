@@ -16,13 +16,15 @@ class Topic_StyleController extends Controller
     public function getTopicStyle(Request $request, $topic_id)
     {
         $new_topic = Topic::all();
-        $topics = Topic::with('topic_style.style')->find($topic_id);
+        $topics = Topic::with('topic_style.style') -> find($topic_id);
         $new_style = [];
-        foreach ($topics->topic_style as $style) {
-            $new_style[] = $style->style;
+        $new_style_1 = Style::all();
+
+        foreach ($topics -> topic_style as $style) {
+            $new_style[] = $style -> style;
         }
 
-        return view('frontend.style.stylepage', compact('new_style', 'new_topic'));
+        return view('frontend.style.stylepage', compact('new_style', 'new_topic', 'new_style_1'));
     }
 
 }

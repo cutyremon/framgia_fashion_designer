@@ -43,11 +43,6 @@ class Topic extends Model
     {
         return $this->hasMany(Topic_Style::class);
     }
-    
-    function style()
-    {
-        return $this->hasMany(Style::class);
-    }
 
 }
 

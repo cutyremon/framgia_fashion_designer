@@ -24,6 +24,8 @@ class TopicController extends Controller
         $topic->topic_name = $request->topic_name;
         $topic->description = $request->description;
         $topic->image = $request->image;
+        $path = $request->file('image')->store('upload/topic/image', 'uploads');
+        $topic->image = $path;
         $topic->save();
         return view('frontend.admin.admin');
     }

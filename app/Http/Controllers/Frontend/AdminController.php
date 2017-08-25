@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 //use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
@@ -31,9 +32,14 @@ class AdminController extends Controller
 //        ];
             if (Auth::User()->role == '1') {
 //        if (Auth::attempt([$data.role => '1'])) {
-                return view('frontend.admin.admin');
-            } else return view('frontend.home.homepage');
+                $categories = Category::all();
+
+                return view('frontend.admin.admin', compact('categories'));
+            } else
+
+                return view('frontend.home.homepage');
         }
+
         return view('frontend.home.homepage');
     }
 }

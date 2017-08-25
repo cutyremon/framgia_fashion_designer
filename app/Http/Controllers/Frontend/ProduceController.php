@@ -5,8 +5,12 @@ namespace App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Produces;
+use App\Helpers\HelpText;
 use Auth;
 use Session;
+use Response;
+use hash;
+use Validator;
 
 class ProduceController extends Controller
 {
@@ -15,12 +19,25 @@ class ProduceController extends Controller
         $produce = new Produces;
         $produce->produce_name = $request->produce_name;
         $produce->description = $request->description;
-        $produce->image = $request->image;
         $produce->price = $request->price;
+        $produce->gender = $request->gender;
+        $produce->color = $request->color;
+        $produce->category_id = $request->category_id;
+//        $produce->image = $request->image;
+
+//        $nameFile = $request->image->hashName();
+        $path = $request->file('image')->store('upload/produce/image', 'uploads');
+        $produce->image = $path;
+//        dd($request-image);
+//        $path = $request->file('image')->store('upload/produce/image', 'uploads');
+////        $produce->image = $path;
+
         $produce->save();
 
-        return view('Frontend.admin.admin');
+
+        return redirect()->back();
     }
+
     //
 }
 
