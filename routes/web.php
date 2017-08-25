@@ -43,4 +43,6 @@ Route::post('/user/edit', 'UserProfileController@editUserInformation')
     ->name('edit.profile');
 Route::post('/user/edit/password', 'UserProfileController@changePasswordUser')
     ->name('change.password');
+Route::get('/user/design', 'DesignCostumeController@designCostume')->name('user.design');
+Route::get('style/{idTopic}', 'AjaxController@ajaxStyle');
 

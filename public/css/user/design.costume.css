@@ -1,0 +1,68 @@
+.select-title {
+    width: 25%;
+    color: #007ba4;
+    margin: 25px 500px 50px;
+}
+
+.select-title h2 {
+    color: blue;
+    font-size: larger;
+    font-family: cursive;
+    width: max-content;
+    margin-left: -30px;
+    text-transform: capitalize;
+    transition: color 1s;
+    margin-bottom: 15px;
+}
+
+.select-title h2:hover, .boundary:hover {
+    color: red;
+}
+
+.boundary {
+    margin-bottom: 30px;
+    color: blue;
+    font-size: larger;
+    font-family: cursive;
+    width: 100%;
+    margin-left: -30px;
+    text-transform: capitalize;
+    transition: color 1s;
+    margin-top: -15px;
+    margin-left: -5px;
+}
+
+.design-content {
+    background: url("/images/bg_costume.png") no-repeat fixed;
+    background-size: 100% 100%;
+}
+
+.box-hat, .box-shoes, .box-pants {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.box-jewelry, .box-shoes {
+    margin-left: 150px;
+}
+
+.box-accessories, .box-pants {
+    margin-right: 150px;
+}
+
+.box-jewelry, .box-accessories {
+    margin-top: -50px;
+}
+
+.information-costume {
+    margin-top: 20px;
+}
+
+.information-costume h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: cursive;
+    font-size: x-large;
+    color: darkslategray;
+}
+
