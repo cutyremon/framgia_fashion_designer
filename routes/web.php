@@ -14,8 +14,8 @@ Route::group(['middleware' => 'localization'], function () {
     Route::get('stylist', function () {
         return view('frontend.stylist.stylistpage');
     });
-    Route::get('style', 'Frontend\StyleController@getStyle')->name('getStyle');
-    Route::get('topic/{topic_style}', 'Frontend\Topic_StyleController@getTopicStyle')->name('topic');
+    Route::get('style', 'Frontend\StyleController@getStyle')->name('listStyle');
+    Route::get('style/{topicStyle}', 'Frontend\StyleController@getTopicStyle')->name('stylePage');
 
     Auth::routes();
 
@@ -24,10 +24,7 @@ Route::group(['middleware' => 'localization'], function () {
     Route::get('user/profile', 'UserProfileController@profile')->name('profile');
 
     Route::get('localization/{id}', 'HomeController@changeL')->name('localization');
-    Route::get('admin', function () {
-        return view('frontend.admin.admin');
-    });
-    Route::get('admin', 'Frontend\AdminController@postAdmin')->name('admin');
+    Route::get('admin', 'Frontend\AdminController@index')->name('admin');
 
     Route::post('postTopic', 'Frontend\TopicController@postTopic')->name('postTopic');
     Route::post('postStyle', 'Frontend\StyleController@postStyle')->name('postStyle');
@@ -43,11 +40,10 @@ Route::group(['middleware' => 'localization'], function () {
     Route::post('/user/edit/password', 'UserProfileController@changePasswordUser')
         ->name('change.password');
     Route::get('/user/design', 'DesignCostumeController@designCostume')->name('user.design');
-
     Route::get('/produce/{idProduce}', 'AjaxController@ajaxProduce');
-
     Route::post('costume', 'DesignCostumeController@updateCostume')->name('costume');
-
     Route::get('style/{idTopic}', 'AjaxController@ajaxStyle');
+    Route::get('comment/{styleId}', 'Frontend\StyleController@getCommentStyle')->name('showComment');
+    Route::post('addcomment', 'Frontend\StyleController@postComment')->name('addComment');
 
 });

@@ -39,6 +39,11 @@ class Style extends Model
         'delete_at',
     ];
 
+    function Comment()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
     function costume_sytle()
     {
         return $this->hasMany(Costume_Style::class);

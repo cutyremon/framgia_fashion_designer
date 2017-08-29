@@ -65,7 +65,7 @@
 
 .font_topic_style {
     margin-bottom: 22px;
-    height: 352px;
+    height: 390px;
     width: 306px;
     background-color: #fff;
 }
@@ -73,6 +73,7 @@
 .font_check {
     margin-left: 154px;
     margin-top: 8px;
+    color: #0b0b0b;
 }
 
 .font_check_1 {
@@ -85,6 +86,19 @@
 }
 
 .topic_style_form2 {
-    height: 260px;
+    height: 296px;
     width: 302px;
+}
+
+.topic-style-form3 {
+    padding: 0 1rem 1rem;
+}
+
+.topic-style-form4 {
+    color: red;
+    margin-left: 120px;
+}
+
+.topic-style-form5 {
+    margin-top: -73px;
 }
