@@ -40,5 +40,14 @@ class SearchController extends Controller
             'categories'
         ));
     }
+
+    public function searchCostume($idCategory)
+    {
+        $listProduce = $this->produce
+            ->where('category_id', '=', $idCategory)
+            ->paginate(12);
+
+        return view('frontend.search.searchCostume', compact('listProduce'));
+    }
 }
 

@@ -58,6 +58,9 @@
                                                 </a>
                                             </li>
                                             <li>
+                                                <a href="{{ route('user.design') }}">{{ __('design costume') }}</a>
+                                            </li>
+                                            <li>
                                                 <a href="{{ route('logout') }}">{{ __('logout') }}</a>
                                             </li>
                                         </ul>
@@ -77,8 +80,11 @@
                                         <ul>
                                             <li>
                                                 <a href="{{ route('admin') }}" class="top-link-blog">
-                                                    {{ __('management page') }}
+                                                    {{ __('management') }}
                                                 </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('user.design') }}">{{ __('design costume') }}</a>
                                             </li>
                                             <li>
                                                 <a href="{{ route('logout') }}">{{ __('logout') }}</a>
