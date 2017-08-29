@@ -22,7 +22,7 @@ class CategoryController extends Controller
     public function category(Request $request)
     {
         $categories = $this->category->get();
-        $current_category = $request->id;
+        $current_category = $request->pro;
 
         return view('frontend.categories.category', compact('categories', 'current_category'));
     }

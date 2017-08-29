@@ -16,8 +16,10 @@
                                     <h6 class="nd-title">{!! $produce->produce_name !!}</h6>
                                     <h7 class="nd-title">{{__('color')}}: {!! $produce->color !!}</h7>
                                     <span class="nd-icon">
-                                    <i class="glyphicon glyphicon-heart-empty"></i>
-                                </span>
+                                        <a href="{{ route('update.produce', [ 'id' => $produce->id ]) }}">
+                                            <i class="glyphicon glyphicon-heart-empty"></i>
+                                        </a>
+                                    </span>
                                 </div>
                             </div>
                         </div>

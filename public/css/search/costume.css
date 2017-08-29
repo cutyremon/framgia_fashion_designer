@@ -1,0 +1,12 @@
+.modal .modal-body .product-item img {
+    height: 105px;
+    width: 105px;
+    margin-top: 10px;
+}
+.modal .modal-body .product-item .nd-title {
+    font-size: 60%;
+    width: 100%;
+}
+.modal .modal-body .product-item .nd-content:hover {
+    cursor: pointer;
+}

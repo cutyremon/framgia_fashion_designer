@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "73e7c092158e5ed65d3e082cc520644b",
+    "content-hash": "f2f333533d5becae4c264595425c828f",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -54,6 +54,55 @@
                 "webprofiler"
             ],
             "time": "2017-07-21T11:56:48+00:00"
+        },
+        {
+            "name": "darryldecode/cart",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/darryldecode/laravelshoppingcart.git",
+                "reference": "4e5716f0214978e19bab76fd023aa979e8a478ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/darryldecode/laravelshoppingcart/zipball/4e5716f0214978e19bab76fd023aa979e8a478ec",
+                "reference": "4e5716f0214978e19bab76fd023aa979e8a478ec",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*",
+                "illuminate/translation": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*",
+                "illuminate/validation": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0",
+                "symfony/var-dumper": "2.7.*@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Darryldecode\\": "src/Darryldecode"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Darryl Fernandez",
+                    "email": "engrdarrylfernandez@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 Shopping cart",
+            "keywords": [
+                "cart",
+                "laravel",
+                "shopping cart"
+            ],
+            "time": "2017-03-09T09:22:00+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",

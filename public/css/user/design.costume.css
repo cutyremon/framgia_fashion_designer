@@ -37,13 +37,18 @@
     background-size: 100% 100%;
 }
 
+.design-content img {
+    width: 200px !important;
+    height: 200px !important;
+}
+
 .box-hat, .box-shoes, .box-pants {
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
 .box-jewelry, .box-shoes {
-    margin-left: 150px;
+    margin-left: 60px;
 }
 
 .box-accessories, .box-pants {
@@ -65,4 +70,16 @@
     font-size: x-large;
     color: darkslategray;
 }
-
+#select {
+    margin-top: -80px;
+}
+.modal .modal-footer {
+    margin: 225px 15px 0px 0px;
+}
+.modal .modal-body {
+    height: 485px;
+    margin-bottom: -200px;
+}
+.modal .modal-header {
+    padding: 10px 20px 0px;
+}

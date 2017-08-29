@@ -34,13 +34,20 @@ Route::group(['middleware' => 'localization'], function () {
     Route::post('postProduce', 'Frontend\ProduceController@postProduce')->name('postProduce');
     Route::get('category/{pro}', 'CategoryController@category')->name('category');
     Route::post('search', 'SearchController@allSearch')->name('search');
+    Route::get('searchCostume/{idCategory}', 'SearchController@searchCostume')->name('searchCostume');
+
+    Route::post('/user/edit/upload', 'UserProfileController@showUploadAvatar')
+        ->name('upload.avatar');
+    Route::post('/user/edit', 'UserProfileController@editUserInformation')
+        ->name('edit.profile');
+    Route::post('/user/edit/password', 'UserProfileController@changePasswordUser')
+        ->name('change.password');
+    Route::get('/user/design', 'DesignCostumeController@designCostume')->name('user.design');
+
+    Route::get('/produce/{idProduce}', 'AjaxController@ajaxProduce');
+
+    Route::post('costume', 'DesignCostumeController@updateCostume')->name('costume');
+
+    Route::get('style/{idTopic}', 'AjaxController@ajaxStyle');
 
 });
-Route::post('/user/edit/upload', 'UserProfileController@showUploadAvatar')
-    ->name('upload.avatar');
-Route::post('/user/edit', 'UserProfileController@editUserInformation')
-    ->name('edit.profile');
-Route::post('/user/edit/password', 'UserProfileController@changePasswordUser')
-    ->name('change.password');
-Route::get('/user/design', 'DesignCostumeController@designCostume')->name('user.design');
-Route::get('style/{idTopic}', 'AjaxController@ajaxStyle');

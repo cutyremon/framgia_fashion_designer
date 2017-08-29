@@ -15,14 +15,14 @@
                             <ul class="nav navbar-nav">
                                 <li>
                                     <a class="{{ $current_category == 0 ? 'active' : '' }}"
-                                       href="{{ route('category', [ 'id' => '0' ]) }}">
+                                       href="{{ route('category', [ 'pro' => '0' ]) }}">
                                         {{__('all')}}
                                     </a>
                                 </li>
                                 @foreach($categories as $category)
                                     <li>
                                         <a class="{{ $current_category == $category->id ? 'active' : '' }}"
-                                           href="{{ route('category', [ 'id' => $category->id ]) }}">
+                                           href="{{ route('category', [ 'pro' => $category->id ]) }}">
                                             {!! $category->category_name !!}
                                         </a>
                                     </li>
