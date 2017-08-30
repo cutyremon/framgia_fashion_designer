@@ -30,7 +30,7 @@
                     </ul>
                 </li>
                 <li><a href="#designers" class="hvr-underline-from-center scroll">{{__('stylist')}}</a></li>
-                <li><a href="#gallery" class="hvr-underline-from-center scroll">{{__('topic')}}</a></li>
+                <li><a href="{{ route('listStyle') }}" class="hvr-underline-from-center">{{__('topic')}}</a></li>
                 <li><a href="#contact" class="hvr-underline-from-center scroll">{{__('contact us')}}</a></li>
                 @if (Auth::guest())
                     <button class="btn btn-success navbar-btn fix-btn">
@@ -80,7 +80,7 @@
                                         <ul>
                                             <li>
                                                 <a href="{{ route('admin') }}" class="top-link-blog">
-                                                    {{ __('management') }}
+                                                    {{ __('manage') }}
                                                 </a>
                                             </li>
                                             <li>

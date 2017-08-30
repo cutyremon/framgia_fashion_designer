@@ -35,11 +35,13 @@
 .design-content {
     background: url("/images/bg_costume.png") no-repeat fixed;
     background-size: 100% 100%;
+    border: #af9a5f solid 7px;
 }
 
 .design-content img {
     width: 200px !important;
     height: 200px !important;
+    border: solid 5px #8d8d8d;
 }
 
 .box-hat, .box-shoes, .box-pants {
@@ -74,12 +76,27 @@
     margin-top: -80px;
 }
 .modal .modal-footer {
-    margin: 225px 15px 0px 0px;
+    margin: 205px 15px 0px 0px;
 }
 .modal .modal-body {
-    height: 485px;
+    height: 580px;
     margin-bottom: -200px;
 }
 .modal .modal-header {
     padding: 10px 20px 0px;
+}
+.form-cus {
+    float: left;
+}
+.form-cus button {
+    margin: 40px 0px 0px 225px;
+    font-size: 150%;
+    width: 40%;
+}
+.form-cus .row-2 textarea {
+    margin: 15px 0px 0px 50px;
+}
+.form-cus .row-2 label {
+    margin-left: 50px;
+    margin-right: -52px;
 }

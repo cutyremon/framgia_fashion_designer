@@ -24,7 +24,8 @@ class Costume_Detail extends Model
      * @var array
      */
     protected $fillable = [
-        'id',
+        'costume_id',
+        'produce_id'
     ];
     /**
      * The attributes that are mass assignable.

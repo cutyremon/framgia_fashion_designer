@@ -84,7 +84,7 @@ class StyleController extends Controller
         foreach ($topics->topic_style as $style) {
             $listStyle[] = $style->style;
         }
-
-        return view('frontend.style.stylepage', compact(['listTopic', 'listStyle']));
+        $current_topic = $topic_id;
+        return view('frontend.style.stylepage', compact(['listTopic', 'listStyle', 'current_topic']));
     }
 }

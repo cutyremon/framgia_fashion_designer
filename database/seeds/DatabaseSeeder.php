@@ -17,10 +17,10 @@ class DatabaseSeeder extends Seeder
             'address' => 'Ha Noi',
             'password' => bcrypt('admin'),
             'role' => '1',
-            'name_display' => str_random(5),
-            'avatar' => 'http://lorempixel.com/300/300/fashion/',
+            'name_display' => 'Admin',
+            'avatar' => 'images/avatar.png',
         ]);
-        for ($i = 0; $i < 9; $i++) {
+        for ($i = 0; $i < 4; $i++) {
             DB::table('users')->insert([
                 'full_name' => str_random(10),
                 'name_display' => str_random(5),

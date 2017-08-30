@@ -9,14 +9,14 @@
             <div class="col-md-3 col-sm-5">
                 <div class="nd-wrap nd-style-8">
                     <div class="product-item">
-                        <img src="{!! $produce->image !!}" class="img-responsive"/>
+                        <img src="{!! url($produce->image) !!}" class="img-responsive"/>
                         <div class="nd-content">
                             <div class="nd-content_inner">
                                 <div class="nd-content_inner1">
-                                    <h6 class="nd-title">{!! $produce->produce_name !!}</h6>
-                                    <h7 class="nd-title">{{__('color')}}: {!! $produce->color !!}</h7>
+                                    <h6 class="nd-title">{!! $produce->gender !!}</h6>
+                                    <h6 class="nd-title">{{__('color')}}: {!! $produce->color !!}</h6>
                                     <span class="nd-icon">
-                                        <a href="{{ route('update.produce', [ 'id' => $produce->id ]) }}">
+                                        <a href="#">
                                             <i class="glyphicon glyphicon-heart-empty"></i>
                                         </a>
                                     </span>

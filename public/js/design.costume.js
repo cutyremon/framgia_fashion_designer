@@ -1,7 +1,8 @@
 $(document).ready(function () {
+
     $('#select-topic').change(function () {
         var idTopic = $(this).val();
-        $.get('/style/' + idTopic, function (data) {
+        $.get('/topicStyle/' + idTopic, function (data) {
             $('#select-style').empty();
             for (var i in data) {
                 var html = '';
@@ -9,7 +10,14 @@ $(document).ready(function () {
                 html += data[i].style.tittle + '</option>';
                 $('#select-style').append(html);
             }
+            ;
         });
+        $('#select-holder').hide();
+    });
+
+    var idStyle;
+    $('#select-style').change(function () {
+        idStyle = $(this).val();
     });
 
     function search($page) {
@@ -26,6 +34,33 @@ $(document).ready(function () {
             success: function (data) {
                 $('#result').html(data);
             }
+        });
+    };
+
+    function setProduce() {
+
+    };
+
+    function updateCostume() {
+        $name = $('#name').val();
+        $description = $('#description').val();
+        $idCostume = JSON.stringify(costume);
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+            },
+            url: '/costume',
+            type: 'post',
+            data: {
+                costume: $idCostume,
+                name: $name,
+                description: $description,
+                style: idStyle
+            },
+            success: function (data) {
+                $('#designing').html(data);
+            }
+
         });
     };
 
@@ -46,40 +81,28 @@ $(document).ready(function () {
         idProduce = $(this).parent('.product-item').find('.check').data('id');
 
     });
-    var costume = [];
-    $(document).on('click', '#select .modal-footer button', function () {
+    var costume = new Array();
+    $(document).on('click', '#save', function () {
         $.get('/produce/' + idProduce, function (data) {
-            $('#designing').find('.img_' + idCategory).attr('src', data.image);
+            $('#designing').find('.img_' + idCategory).attr('src', '/' + data.image);
+            $('#designing').find('.information_' + idCategory).empty();
             var html = '';
             html += '<ul>';
             html += '<li>' + "Tên:" + data.produce_name + '</li>';
             html += '<li>' + "Mau:" + data.color + '</li>';
-            html += '<li>' + "Giới tính:";
-            html += data.gender == 0 ? "Nữ" : "Nam" + '</li>';
+            html += '<li>' + "Giới tính:" + data.gender + '</li>';
             html += '<li>' + "Mô tả:" + data.description + '</li>';
             html += '<ul>';
             $('#designing').find('.information_' + idCategory).append(html);
 
+            costume.push(idProduce);
+            setProduce();
         });
-        costume.push(idProduce);
     });
 
-    // $('#allSave').on('click', function () {
-    //     $.ajax({
-    //         headers: {
-    //             'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
-    //         },
-    //         url: '/costume/',
-    //         type: 'post',
-    //         data: {
-    //
-    //         },
-    //         success: function (data) {
-    //
-    //         }
-    //
-    //     });
-    // });
+    $('#allSave').on('click', function () {
+        updateCostume();
+    });
 
     $(document).on('click', '#page-paginate .pagination a', function (e) {
         search(this.text);
@@ -87,4 +110,5 @@ $(document).ready(function () {
         $(this).parent().addClass('active');
         e.preventDefault();  //tắt event load lại trang cua the <a>
     });
+
 });

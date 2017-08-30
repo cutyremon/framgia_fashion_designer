@@ -74,8 +74,8 @@
                         <div class="container-fluid container-color">
                             <ul class="nav navbar-nav">
                                 @foreach($listTopic as $style)
-                                    <li>
-                                        <a class="container-color-2"
+                                    <li >
+                                        <a class="{{$current_topic == $style->id ? 'active' : '' }}"
                                            href="{{ route('stylePage', [ 'topicStyle' => $style->id ]) }}">
                                             {!! $style->topic_name !!}
                                         </a>
@@ -100,7 +100,7 @@
                                     <div class="font_topic_style">
                                         <div>
                                             <div class="nd-wrap nd-style-8 topic_style_form2">
-                                                <img src="{!! $style->image !!}" class="img-responsive" alt=" "/>
+                                                <img src="{!! url($style->image) !!}" class="img-responsive" alt=" "/>
                                                 <div class="nd-content">
                                                     <div class="nd-content_inner">
                                                         <div class="nd-content_inner1">
@@ -146,14 +146,5 @@
 @endsection
 
 @section('script')
-    {{ Html::script('//code.jquery.com/jquery-1.11.2.min.js', ['type' => 'text/javascript']) }}
-    {{ Html::script('//code.jquery.com/jquery-migrate-1.2.1.min.js', ['type' => 'text/javascript']) }}
-
-    {{ Html::script('/js/admin.js', ['type' => 'text/javascript']) }}
-    {{ Html::script('/js/search.js', ['type' => 'text/javascript']) }}
     {{ Html::script('/js/comment.js', ['type' => 'text/javascript']) }}
-    {{ Html::script('/bower_components/jquery/dist/jquery.min.js', ['type' => 'text/javascript']) }}
-    {{ Html::script('/bower_components/ResponsiveSlides/responsiveslides.min.js', ['type' => 'text/javascript']) }}
-    {{ Html::script('/bower_components/owl.carousel/dist/owl.carousel.js', ['type' => 'text/javascript']) }}
-    {{ Html::script('/bower_components/bootstrap/dist/js/bootstrap.min.js', ['type' => 'text/javascript']) }}
 @endsection

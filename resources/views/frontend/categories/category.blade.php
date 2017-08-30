@@ -55,10 +55,10 @@
                     <div class="sidebar-cate">
                         <h3><span>{{__('search by gender')}}</span></h3>
                         <ul class="cate-list">
-                            <li id="search-gender-1" data-gender="1">
+                            <li id="search-gender-1" data-gender="male">
                                 <i class="fa fa-hand-o-right"> {{__('male')}}</i>
                             </li>
-                            <li id="search-gender-2" data-gender="0">
+                            <li id="search-gender-2" data-gender="female">
                                 <i class="fa fa-hand-o-right"> {{__('female')}}</i>
                             </li>
                         </ul>

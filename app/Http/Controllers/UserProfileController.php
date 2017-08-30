@@ -16,7 +16,8 @@ class UserProfileController extends Controller
 
     public function __construct(
         User $user_information
-    ) {
+    )
+    {
         $this->user_information = $user_information;
     }
 
@@ -54,7 +55,7 @@ class UserProfileController extends Controller
     {
         $user = User::find(Auth::user()->id);
 
-        if( $request->hasFile('image_upload') ) {
+        if ($request->hasFile('image_upload')) {
             HelpText::deleteFile($user->avatar);
 
             $nameFile = $request->image_upload->hashName();
@@ -92,7 +93,7 @@ class UserProfileController extends Controller
         if (!Hash::check($request->old_password, $user->password)) {
             $data['error']['status'] = true;
             $data['error']['old_password'] = __('Old password not correct!');
-        }else {
+        } else {
             $user->password = bcrypt($request->new_password);
             $user->save();
             $data['message'] = __('Change password successfully!');
