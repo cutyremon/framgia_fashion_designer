@@ -35,11 +35,19 @@ class Comment extends Model
         'create_at',
         'delete_at',
     ];
-    function user() {
-    	return $this->belongsTo(User::class);
+
+    function user()
+    {
+        return $this->belongsTo(User::class);
     }
-    
-    function costume() {
-    	return $this->belongsTo(Costume::class);
+
+    function costume()
+    {
+        return $this->belongsTo(Costume::class);
+    }
+
+    function style()
+    {
+        return $this->belongsTo(Style::class);
     }
 }
