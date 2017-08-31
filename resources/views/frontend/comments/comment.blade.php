@@ -10,7 +10,7 @@
         <h4 class="modal-title comment-tittle">{{$showStyle->tittle}}</h4>
     </div>
     <div class="modal-body">
-        <img id="currentImage" src="{!! $showStyle->image !!}" class="img-responsive center-block comment-body"
+        <img id="currentImage" src="{!! url($showStyle->image) !!}" class="img-responsive center-block comment-body"
         />
         <a href="#carousel-example-generic" class="left carousel-control" role="button"
            data-slide="prev">
@@ -45,6 +45,5 @@
     <button id="postComment" class="comment-button">addComment</button>
 </ul>
 
-{{ Html::script('/bower_components/jquery/dist/jquery.min.js', ['type' => 'text/javascript']) }}
 {{ Html::script('/js/comment.js', ['type' => 'text/javascript']) }}
-{{ Html::script('/bower_components/jquery/dist/jquery.min.js', ['type' => 'text/javascript']) }}
+

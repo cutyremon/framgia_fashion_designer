@@ -2,12 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Costume_Style;
 use Illuminate\Http\Request;
 use App\Models\Topic;
 use App\Models\Style;
 use App\Models\Costume;
+use App\Models\User;
 use App\Models\Produces;
 use App\Models\Costume_Detail;
+use Illuminate\Support\Facades\Input;
+use Response;
+use Auth;
 
 
 class DesignCostumeController extends Controller
@@ -20,8 +25,9 @@ class DesignCostumeController extends Controller
         Topic $topic,
         Style $style,
         Produces $produce
-    ) {
-        $this->topics= $topic;
+    )
+    {
+        $this->topics = $topic;
         $this->styles = $style;
         $this->produces = $produce;
     }
@@ -37,15 +43,32 @@ class DesignCostumeController extends Controller
         ));
     }
 
-    public function updateProduce()
+    public function updateCostume(Request $request)
     {
-        return redirect()->route('user.design');
-    }
+        $costume = new Costume;
+        $costume->user_id = User::find(Auth::user()->id)->id;
+        $costume->name = $request->input('name');
+        $costume->description = $request->input('description');
+        $costume->average_point = '1';
 
-//    public function updateCostume(Request $request)
-//    {
+        $costume->save();
+
+        $costume_style = new Costume_Style;
+        $costume_style->style_id = $request->input('style');
+        $costume_style->costume_id = $costume->id;
+
+        $costume_style->save();
+
+//        $costume_datail = new Costume_Detail;
+//        $idproduce = $request->input('costume');
+//        foreach ($idproduce as $id)
+//        {
+//            $costume_datail->costume_id = $costume->id;
+//            $costume_datail->produce_id = $id;
+//        }
 //
-//        return redirect()->route('user.design');
-//    }
-}
+//        $costume_datail->save();
 
+        return redirect()->back();
+    }
+}

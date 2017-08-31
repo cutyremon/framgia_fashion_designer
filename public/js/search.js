@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     function search($page) {
         $category = $('#search-category').val();
         $keyword = $('#search-keyword').val();
@@ -46,7 +47,7 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
     $('#topicList').on('click', function () {
-        $("a").remoteClass("active");
+        $("a").removeClass("active");
         $(this).addClass("active");
     });
 
@@ -57,4 +58,3 @@ $(document).ready(function () {
         e.preventDefault();  //tắt event load lại trang cua the <a>
     });
 });
-

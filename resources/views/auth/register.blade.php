@@ -63,15 +63,17 @@
                                 </span>
                                 @endif
                             </div>
+
+
+                            <div class="form-group">
+                                <p class=" login form-group">
+                                    <input href="{{ route('login') }}" type="submit" value="{{__('register')}}"/>
+                                </p>
+                            </div>
+
                         </form>
                     </div>
-                    <div class="form-group">
-                        <p class="login button">
-                            <input href="{{ route('login') }}" type="submit" value="{{__('register')}}"/>
-                        </p>
-                    </div>
                 </div>
-                {{--</form>--}}
             </div>
         </div>
     </div>

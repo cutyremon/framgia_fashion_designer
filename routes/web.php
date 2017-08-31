@@ -11,9 +11,7 @@
 */
 Route::group(['middleware' => 'localization'], function () {
     Route::get('home', 'HomeController@home')->name('home');
-    Route::get('stylist', function () {
-        return view('frontend.stylist.stylistpage');
-    });
+
     Route::get('style', 'Frontend\StyleController@getStyle')->name('listStyle');
     Route::get('style/{topicStyle}', 'Frontend\StyleController@getTopicStyle')->name('stylePage');
 
@@ -42,7 +40,7 @@ Route::group(['middleware' => 'localization'], function () {
     Route::get('/user/design', 'DesignCostumeController@designCostume')->name('user.design');
     Route::get('/produce/{idProduce}', 'AjaxController@ajaxProduce');
     Route::post('costume', 'DesignCostumeController@updateCostume')->name('costume');
-    Route::get('style/{idTopic}', 'AjaxController@ajaxStyle');
+    Route::get('topicStyle/{idTopic}', 'AjaxController@ajaxStyle');
     Route::get('comment/{styleId}', 'Frontend\StyleController@getCommentStyle')->name('showComment');
     Route::post('addcomment', 'Frontend\StyleController@postComment')->name('addComment');
 

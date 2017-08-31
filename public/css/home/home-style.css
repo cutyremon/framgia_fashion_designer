@@ -4,7 +4,15 @@
     height: 480px;
     margin-top: 1px;
 }
-
+.carousel-caption a {
+    color: #ac2925;
+    font-size: 120%;
+    font-family: cursive;
+}
+.carousel-caption a:hover {
+    color: #000080;
+    font-size: 135%;
+}
 .gal-btm > .col-md-6 img {
     width: 570px;
     height: 305px;

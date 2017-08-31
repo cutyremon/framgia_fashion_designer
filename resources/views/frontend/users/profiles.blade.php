@@ -3,7 +3,7 @@
 @section('custom-css')
     {{ Html::style('/css/profile/style_profile.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
     {{ Html::style('/css/profile/custom-style_profile.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
-@endsection('custom-css')
+@endsection
 
 @section('content')
     <!-- Profile -->
@@ -11,7 +11,11 @@
         <div class="row">
             <div class="profile-head">
                 <div class="col-md-4 col-sm-4 col-xs-12 img-icon">
-                    <img src="{!! url(Auth::User()->avatar) !!}" class="img-responsive"/>
+                    @if((Auth::User()->avatar) != null)
+                        <img src="{!! url(Auth::User()->avatar) !!}" class="img-responsive"/>
+                    @else
+                        <img src="{!! asset('/images/avatar.png') !!}" class="img-responsive"/>
+                    @endif
                     <a href="javascript:void(0)" class="edit-icon" data-toggle="modal"
                        data-target="#modalAvatar">
                         <i class="fa fa-pencil"></i>{{ __('edit') }}
@@ -21,7 +25,7 @@
                     <h5>{!! Auth::User()->full_name !!}</h5>
                     <ul>
                         <li><span class="glyphicon glyphicon-user"></span>
-                            {{ __('gender') }}: {!! Auth::User()->gender !!}
+                            {{ __('gender') }}: {!! __(Auth::User()->gender) !!}
                         </li>
                         <li><span class="glyphicon glyphicon-calendar"></span>
                             {{ __('birthday') }}: {!! Auth::User()->birthday !!}
@@ -98,8 +102,13 @@
                                         </div>
                                         <div class="col-md-6 col-lg-6 img-padding-circle image-upload"
                                              align="center">
-                                            <img alt="User Pic" id="image_target" src="{!! url(Auth::User()->avatar) !!}"
-                                                 class="img-circle img-responsive" width="300px" height="300px">
+                                            @if((Auth::User()->avatar) != null)
+                                                <img alt="User Pic" id="image_target" src="{!! url(Auth::User()->avatar) !!}"
+                                                     class="img-circle img-responsive" width="300px" height="300px"/>
+                                            @else
+                                                <img alt="User Pic" id="image_target" src="{!! asset('/images/avatar.png') !!}"
+                                                     class="img-circle img-responsive" width="300px" height="300px"/>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>

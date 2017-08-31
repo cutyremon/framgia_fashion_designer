@@ -45,7 +45,7 @@ class SearchController extends Controller
     {
         $listProduce = $this->produce
             ->where('category_id', '=', $idCategory)
-            ->paginate(12);
+            ->paginate(8);
 
         return view('frontend.search.searchCostume', compact('listProduce'));
     }

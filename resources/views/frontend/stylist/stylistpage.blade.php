@@ -1,67 +1,73 @@
 @extends('frontend.layouts.master')
 
+@section('custom-css')
+    {{ Html::style('/css/profile/style_profile.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
+    {{ Html::style('/css/profile/custom-style_profile.css', ['rel' => 'stylesheet', 'type' => 'text/css']) }}
+@endsection('custom-css')
+
 @section('content')
-<!-- Right to left-->
-    <div class="team" id="designers">
-        <div class="container">
-            <h5 class="title-w3ls"><a href="#">{{__('stylist')}}</a></h5>
-            <div class="col-sm-4 team-w3-agileits">
-                <!-- normal -->
-                <div class="ih-item circle effect3 bottom_to_top"><a href="#">
-                    <div class="img"><img src="images/t1.jpg" alt="img"></div>
-                    <div class="info">
-                        <h3>Ashley Rose</h3>
-                        <p> Ut scelerisque pellentesque tortor.
-                        </p>
-                    </div>
+    <!-- Profile -->
+    <div class="container">
+        <div class="row">
+            <div class="profile-head">
+                <div class="col-md-4 col-sm-4 col-xs-12 img-icon">
+                    <img src="{!! url(Auth::User()->avatar) !!}" class="img-responsive"/>
+                    <a href="javascript:void(0)" class="edit-icon" data-toggle="modal"
+                       data-target="#modalAvatar">
+                        <i class="fa fa-pencil"></i>{{ __('edit') }}
                     </a>
-                </div>
-            <!-- end normal -->
-            <ul class="social team-w3l">
-                <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" class="twt"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" class="gpls"><i class="fa fa-dribbble"></i></a></li>
-            </ul>
+                </div><!--col-md-4 col-sm-4 col-xs-12 close-->
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <h5>{!! Auth::User()->full_name !!}</h5>
+                    <ul>
+                        <li><span class="glyphicon glyphicon-user"></span>
+                            {{ __('gender') }}: {!! Auth::User()->gender !!}
+                        </li>
+                        <li><span class="glyphicon glyphicon-calendar"></span>
+                            {{ __('birthday') }}: {!! Auth::User()->birthday !!}
+                        </li>
+                        <li><span class="glyphicon glyphicon-map-marker"></span>
+                            {{ __('address') }}: {!! Auth::User()->address !!}
+                        </li>
+                        <li><span class="glyphicon glyphicon-phone"></span>
+                            {{ __('phone') }}: {!! Auth::User()->phone !!}</a>
+                        </li>
+                        <li><span class="glyphicon glyphicon-envelope"></span>
+                            {{ __('email') }}: {!! Auth::User()->email !!}</a>
+                        </li>
+                        <li><span class="glyphicon glyphicon-comment"></span>
+                            {{ __('description') }}: {!! Auth::User()->description !!}</li>
+                        <li>
+                            <a href="javascript:void(0)" class="span-edit-profile text-warning" data-toggle="modal"
+                               data-target="#per-info">( {{ __('change profile') }}<i class="fa fa-pencil"></i> )
+                            </a>
+                            <a href="javascript:void(0)" class="span-edit-profile text-warning" data-toggle="modal"
+                               data-target="#modalPassword">( {{ __('change password') }}<i class="fa fa-pencil"></i> )
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--col-md-8 col-sm-8 col-xs-12 close-->
             </div>
-            <div class="col-sm-4 team-w3-agileits">
-            <!-- colored -->
-                <div class="ih-item circle colored effect3 bottom_to_top"><a href="#">
-                    <div class="img"><img src="images/t2.jpg" alt="img"></div>
-                        <div class="info">
-                            <h3>Linda Carl</h3>
-                            <p> Ut scelerisque pellentesque tortor.</p>
+        </div><!--//profile-head close-->
+        <div class="row">
+            <div class="profile-content">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="block">
+                        <div class="block-title">
+                            <h2>{{ __('topic has joined') }}</h2>
                         </div>
-                    </a>
-                </div>
-                <!-- end colored -->
-                <ul class="social team-w3l">
-                    <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" class="twt"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" class="gpls"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
-            </div>
-            <div class="col-sm-4 team-w3-agileits">
-            <!-- colored -->
-                <div class="ih-item circle colored effect3 bottom_to_top"><a href="#">
-                    <div class="img"><img src="images/t3.jpg" alt="img"></div>
-                    <div class="info">
-                        <h3>Kristin Jean</h3>
-                        <p> Ut scelerisque pellentesque tortor.</p>
                     </div>
-                    </a>
                 </div>
-                <!-- end colored -->
-                <ul class="social team-w3l">
-                    <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" class="twt"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" class="gpls"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="block">
+                        <div class="block-title">
+                            <h2>{{ __('the costumes are designed') }}</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-<!-- //end Right to left-->
+    </div><!--container header close-->
+    <!-- //Profile -->
 @endsection('content')
 
-@section('custom-css')
-    <link rel="stylesheet" type="text/css" media="all" href="css/custom-style.css">
-@endsection('custom-css')

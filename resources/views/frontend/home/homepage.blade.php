@@ -27,7 +27,7 @@
                     <div class="item {{ $i == 1 ? 'active' : '' }}">
                         <img src="{!! $topics[$i]->image !!}">
                         <div class="carousel-caption">
-                            <a href="#">
+                            <a href="{{ route('stylePage', [ 'topicStyle' => $topics[$i]->id ]) }}">
                                 <h3>{!! $topics[$i]->topic_name !!}</h3>
                                 <p>{!! $topics[$i]->description !!}</p>
                             </a>
@@ -160,11 +160,11 @@
     <div class="gallery" id="gallery">
         <!-- gallery -->
         <div class="container">
-            <h5 class="title-w3ls"><a href="#">{{__('STYLE')}}</a></h5>
+            <h5 class="title-w3ls"><a href="{{ route('listStyle') }}">{{__('STYLE')}}</a></h5>
             <div class="gal-btm">
                 @for($i = 0; $i < count($styles); $i++)
                     <div class="{{ HelpText::stylesHome($i + 1) }}" data-wow-delay=".5s">
-                        <a href="#image-1">
+                        <a href="{{ route('listStyle') }}">
                             <div class="nd-wrap nd-style-8">
                                 <img src="{!! $styles[$i]->image !!}" class="img-responsive"/>
                                 <div class="nd-content">

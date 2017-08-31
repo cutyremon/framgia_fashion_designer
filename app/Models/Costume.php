@@ -24,11 +24,10 @@ class Costume extends Model
      * @var array
      */
     protected $fillable = [
-        'id',
         'user_id',
-        'style_id',
-        'average_point',
-        'description'
+        'description',
+        'name',
+        'average_point'
     ];
     /**
      * The attributes that are mass assignable.
@@ -39,23 +38,29 @@ class Costume extends Model
         'create_at',
         'delete_at',
     ];
-    function costume_style() {
-    	return $this->hasMany(Costume_Style::class);
+
+    function costume_style()
+    {
+        return $this->hasMany(Costume_Style::class);
     }
 
-    function costume_detail() {
-    	return $this->hasMany(Costume_Detail::class);
+    function costume_detail()
+    {
+        return $this->hasMany(Costume_Detail::class);
     }
 
-    function rate() {
-    	return $this->hasMany(Rate::class);
+    function rate()
+    {
+        return $this->hasMany(Rate::class);
     }
 
-    function comment() {
-    	return $this->hasMany(Comment::class);
+    function comment()
+    {
+        return $this->hasMany(Comment::class);
     }
 
-    function user() {
-    	return $this->belongsTo(User::class);
+    function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }

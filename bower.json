@@ -28,6 +28,8 @@
     "ui-to-top": "jquery.ui-to-top#*",
     "owl.carousel": "^2.2.1",
     "magnific-popup": "Magnific-Popup#^1.1.0",
-    "ResponsiveSlides": "*"
+    "ResponsiveSlides": "*",
+    "jquery-storage-api": "jQuery-Storage-API#^1.9.4",
+    "bootbox.js": "bootbox#^4.4.0"
   }
 }
