@@ -1,0 +1,30 @@
+.h4 .comment-tittle {
+    margin-bottom: -20px;
+}
+
+.modal-body .comment-body {
+    height: 250px;
+    width: 347px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+.list-group .comment-button {
+    margin-left: 475px;
+}
+
+.comment-color-h {
+    padding: 3px 30px !important;
+}
+
+.comment-botron {
+    border-radius: 5px 10px 4px;
+}
+
+.comment-form {
+    margin-left: 360px;
+}
+
+.comment-user-color {
+    color: mediumaquamarine;
+}

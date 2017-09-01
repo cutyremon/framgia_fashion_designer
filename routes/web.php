@@ -43,5 +43,6 @@ Route::group(['middleware' => 'localization'], function () {
     Route::get('topicStyle/{idTopic}', 'AjaxController@ajaxStyle');
     Route::get('comment/{styleId}', 'Frontend\StyleController@getCommentStyle')->name('showComment');
     Route::post('addcomment', 'Frontend\StyleController@postComment')->name('addComment');
+    Route::get('admin/{ad}', 'Frontend\AdminController@postAdminProduce')->name('getAdminProduce');
 
 });

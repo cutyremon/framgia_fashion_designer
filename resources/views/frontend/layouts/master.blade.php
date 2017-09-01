@@ -41,6 +41,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <!-- //End Footer -->
     </div>
 </body>
-    @include('frontend.layouts.library.javascrip')
     @yield('script')
+    @include('frontend.layouts.library.javascrip')
 </html>
