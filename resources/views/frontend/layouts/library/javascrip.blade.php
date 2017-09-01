@@ -5,7 +5,7 @@
 {{ Html::script('/bower_components/ResponsiveSlides/responsiveslides.min.js') }}
 {{ Html::script('/js/jquery.flipster.js') }}
 {{ Html::script('/bower_components/ui-to-top/js/jquery.ui.totop.js', ['type' => 'text/javascript']) }}
-
+{{--{{ Html::script('/bower_components/starrr/starrr.js', ['type' => 'text/javascript']) }}--}}
 {{ Html::script('/bower_components/jquery-easing/jquery.easing.js', ['type' => 'text/javascript']) }}
 
 <script>
@@ -16,7 +16,7 @@
         window.scrollTo(0, 1);
     }
 
-   // You can also use "$(window).load(function() {"
+    // You can also use "$(window).load(function() {"
     $(function () {
         // Slideshow 4
         $("#slider3").responsiveSlides({

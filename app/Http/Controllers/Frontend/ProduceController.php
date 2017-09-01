@@ -23,21 +23,12 @@ class ProduceController extends Controller
         $produce->gender = $request->gender;
         $produce->color = $request->color;
         $produce->category_id = $request->category_id;
-//        $produce->image = $request->image;
-
-//        $nameFile = $request->image->hashName();
         $path = $request->file('image')->store('upload/produce/image', 'uploads');
         $produce->image = $path;
-//        dd($request-image);
-//        $path = $request->file('image')->store('upload/produce/image', 'uploads');
-////        $produce->image = $path;
 
         $produce->save();
 
-
         return redirect()->back();
     }
-
-    //
 }
 

@@ -169,7 +169,7 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
-        Darryldecode\Cart\CartServiceProvider::class,
+//        Darryldecode\Cart\CartServiceProvider::class,
         /*
          * Application Service Providers...
          */
